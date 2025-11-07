@@ -15,7 +15,9 @@ export function Header({ showSearch = false, onSearchClick }: HeaderProps) {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between px-6">
         <Link href="/" className="flex items-center space-x-2 hover-elevate active-elevate-2 rounded-md px-3 py-2 -ml-3" data-testid="link-home">
-          <span className="text-xl font-bold">AuditMate MFG</span>
+          <img src="/Auditmate-MFG-LOGO-Transparent-uBRzJ2xf.png" alt="AuditMate MFG" className="h-12 w-auto" />
+
+          {/*<span className="text-xl font-bold">AuditMate MFG</span>*/}
         </Link>
 
         <div className="flex items-center gap-2">

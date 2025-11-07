@@ -14,7 +14,13 @@ const iconMap: Record<string, LucideIcon> = {
 
 function SidebarItem({ item, level = 0 }: { item: DocItem; level?: number }) {
   const [location] = useLocation();
-  const [isOpen, setIsOpen] = useState(true);
+  /*const [isOpen, setIsOpen] = useState(true);*/
+  const [isOpen, setIsOpen] = useState(
+  // Auto-expand if the current URL starts with this item's path
+  location.startsWith(item.path)
+  );
+
+  
   const hasChildren = item.children && item.children.length > 0;
   const isActive = location === item.path || location.startsWith(item.path + "/");
   const IconComponent = item.icon ? iconMap[item.icon] : null;

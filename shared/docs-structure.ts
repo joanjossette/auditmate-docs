@@ -13,7 +13,8 @@ export const docsStructure: DocItem[] = [
     children: [
       { title: "Introduction", path: "/docs/getting-started/introduction" },
       { title: "Installation Guide", path: "/docs/getting-started/installation" },
-      { title: "Quick Start", path: "/docs/getting-started/quick-start" },
+      { title: "Settings Configuration", path: "/docs/getting-started/settings-config" },
+      { title: "Setting Up A New User", path: "/docs/getting-started/set-up-new-user" },
     ],
   },
   {
