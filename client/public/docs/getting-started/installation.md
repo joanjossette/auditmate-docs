@@ -88,4 +88,4 @@ If port 3003 is already in use, modify the configuration in `config.xml`.
 
 ## Next Steps
 
-Continue to [Quick Start](/docs/getting-started/quick-start) to begin using the system.
+Explore the [Main Screen Overview](/docs/getting-started/main-screen-overview) to understand the system’s interface.

@@ -13,8 +13,19 @@ export const docsStructure: DocItem[] = [
     children: [
       { title: "Introduction", path: "/docs/getting-started/introduction" },
       { title: "Installation Guide", path: "/docs/getting-started/installation" },
+      { title: "Main Screen Overview", path: "/docs/getting-started/main-screen-overview" },
       { title: "Settings Configuration", path: "/docs/getting-started/settings-config" },
       { title: "Setting Up A New User", path: "/docs/getting-started/set-up-new-user" },
+    ],
+  },
+  {
+    title: "Machines",
+    path: "/docs/machines",
+    icon: "Server",
+    children: [
+      { title: "Machine Types", path: "/docs/machines/machine-types" },
+      { title: "Adding Machines", path: "/docs/machines/adding-machines" },
+      { title: "Machine Configuration", path: "/docs/machines/configuration" },
     ],
   },
   {
@@ -28,16 +39,6 @@ export const docsStructure: DocItem[] = [
       { title: "CNC Program Import", path: "/docs/using-the-product/cnc-program-import" },
       { title: "Authorization Process", path: "/docs/using-the-product/authorization-process" },
       { title: "Sending to Machine", path: "/docs/using-the-product/sending-to-machine" },
-    ],
-  },
-  {
-    title: "Machines",
-    path: "/docs/machines",
-    icon: "Server",
-    children: [
-      { title: "Machine Types", path: "/docs/machines/machine-types" },
-      { title: "Adding Machines", path: "/docs/machines/adding-machines" },
-      { title: "Machine Configuration", path: "/docs/machines/configuration" },
     ],
   },
   {

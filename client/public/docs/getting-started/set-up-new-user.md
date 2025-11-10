@@ -1,22 +1,18 @@
 ---
-title: Getting Started
-description: Welcome to AuditMate MFG Revision Manager documentation
+title: Setting Up A New User
+description: Learn how to create, configure, and manage user accounts in AuditMate.
+category: Getting Started
 ---
 
-# Getting Started
+# Setting Up a New User
 
-Welcome to the AuditMate MFG Revision Manager documentation. This guide will help you get up and running quickly.
+This section guides you through creating new users in AuditMate, assigning roles, and configuring permissions to ensure they can access the right features and data.
 
-## Overview
+You will learn how to:
 
-AuditMate MFG Revision Manager is a web-based platform designed to streamline the way manufacturers and operators manage CNC programs and related documents.
+- Add a new user to the system.
+- Assign user roles and permissions.
+- Manage existing users.
+- Understand user access levels for different modules.
 
-## What You'll Learn
-
-- How to install and configure AuditMate
-- Basic concepts and terminology
-- Your first steps with the platform
-
-## Next Steps
-
-Continue to the [Installation Guide](/docs/getting-started/installation) to begin setting up your system.
+Follow these steps to get your team ready to use AuditMate efficiently.

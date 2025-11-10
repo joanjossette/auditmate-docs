@@ -16,7 +16,7 @@ It is divided into two categories: **Global Settings** and **User Settings**.
 
 | **Setting Item** | **Description** | **Image** |
 |------------------|-----------------|------------|
-| **Part Authorization Types** | Define which user roles are authorized to approve **Parts**, **Operations**, **Machines**, and **CNC Programs** before moving to *Production* status.<br><br>Click the **three dots** beside an authorization type to view the list of user roles assigned to it. | <img src="/images/settings-part-authorization.png" alt="Part Authorization Settings" width="400"/> |
+| **Part Authorization Types** | Define which user roles are authorized to approve **Parts**, **Operations**, **Machines**, and **CNC Programs** before moving to *Production* status.<br><br>Click the **three dots** beside an authorization type to view the list of user roles assigned to it. |<img src="/images/settings-part-authorization.png" alt="Download Status Authorization Settings" width="400" /> |
 | **Download Status Authorization** | Control which user roles can authorize CNC Programs to be downloaded or sent to machines.<br><br>Toggle a user role’s switch to grant or remove permission to change a program’s download status. | <img src="/images/settings-download-authorization.png" alt="Download Status Authorization Settings" width="400"/> |
 | **Part Revision Format** | Specify the format of **revision identifiers** for parts to ensure standard naming and traceability. | <img src="/images/settings-part-revision-format.png" alt="Part Revision Format" width="400"/> |
 | **Operation Revision Format** | Define the **revision format** for operations, maintaining consistent versioning practices across the system. | <img src="/images/settings-operation-revision-format.png" alt="Operation Revision Format" width="400"/> |
@@ -35,5 +35,6 @@ It is divided into two categories: **Global Settings** and **User Settings**.
 
 ---
 
-> 💡 **Tip:**  
-> Settings under **Global Settings** are typically managed by administrators, while **User Settings** apply only to the currently logged-in user.
+## Next Steps
+
+Continue with [Setting up a New User](/docs/getting-started/set-up-new-user) to get users ready for the system.

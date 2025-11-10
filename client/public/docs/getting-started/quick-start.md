@@ -8,6 +8,7 @@ category: Getting Started
 
 Get up and running with AuditMate in minutes.
 
+
 ## First Login
 
 1. Open your browser and navigate to the AuditMate URL
