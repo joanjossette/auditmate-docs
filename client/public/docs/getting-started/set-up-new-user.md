@@ -1,6 +1,6 @@
 ---
 title: Setting Up A New User
-description: Learn how to create, configure, and manage user accounts in AuditMate.
+description: Learn how to create, configure, and manage user accounts in AuditMate, including how to Add User, assign roles, and set permissions.
 category: Getting Started
 ---
 
@@ -16,6 +16,7 @@ category: Getting Started
 ![Main Screen](./images/users.png "width=800 nozoom")    
 
 ## Add User
+<!-- search: Add User -->
 |  |  |
 |---|---|
 | - Click **Create** to open the **Create User** form.  <br> - Fill in the required user details such as **Name**, **Primary Facility**, **Email**, and other relevant information. <br> - Assign the appropriate **User Role** to define access permissions. <br> - Click **Save** to add the new user to the system. | ![Create User Form](./images/create-user-form.png "width=400") |
