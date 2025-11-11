@@ -10,22 +10,41 @@ interface MarkdownContentProps {
   content: string;
 }
 
-// ZoomImage component for click-to-zoom
-function ZoomImage({ src, alt, style }: { src: string; alt?: string; style?: React.CSSProperties }) {
+interface ZoomImageProps {
+  src: string;
+  alt?: string;
+  style?: React.CSSProperties;
+  noZoom?: boolean;
+}
+
+// 🔍 ZoomImage component with "nozoom" support
+function ZoomImage({ src, alt, style, noZoom = false }: ZoomImageProps) {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => {
+    if (noZoom) return;
+    setIsOpen(true);
+  };
 
   return (
     <>
       <img
         src={src}
         alt={alt}
-        style={style}
-        className="rounded-lg shadow-md mx-auto max-w-full cursor-zoom-in transition-transform duration-200 hover:scale-105"
-        onClick={() => setIsOpen(true)}
+        style={{
+          ...style,
+          display: "inline-block",
+          transformOrigin: "center center",
+          maxWidth: "100%",
+        }}
+        className={`rounded-lg shadow-md mx-auto transition-transform duration-200 ${
+          noZoom ? "" : "cursor-zoom-in hover:scale-105"
+        }`}
+        onClick={handleClick}
         loading="lazy"
       />
 
-      {isOpen && (
+      {!noZoom && isOpen && (
         <div
           className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
           onClick={() => setIsOpen(false)}
@@ -33,7 +52,7 @@ function ZoomImage({ src, alt, style }: { src: string; alt?: string; style?: Rea
           <img
             src={src}
             alt={alt}
-            className="max-h-[60%] max-w-[60%] rounded-lg shadow-lg cursor-zoom-out"
+            className="max-h-[80%] max-w-[80%] rounded-lg shadow-lg cursor-zoom-out transition-transform duration-300"
           />
         </div>
       )}
@@ -64,13 +83,16 @@ export function MarkdownContent({ content }: MarkdownContentProps) {
                 {String(children).replace(/\n$/, "")}
               </SyntaxHighlighter>
             ) : (
-              <code className="px-1.5 py-0.5 rounded bg-muted text-sm font-mono" {...props}>
+              <code
+                className="px-1.5 py-0.5 rounded bg-muted text-sm font-mono"
+                {...props}
+              >
                 {children}
               </code>
             );
           },
 
-          // Images with zoom
+          // 🖼️ Images (with nozoom support)
           img({ node, ...props }: any) {
             let src = props.src || "";
 
@@ -80,7 +102,11 @@ export function MarkdownContent({ content }: MarkdownContentProps) {
             }
 
             // Parse width/height
-            const style: React.CSSProperties = {};
+            const style: React.CSSProperties = {
+              display: "inline-block",
+              transformOrigin: "center center",
+            };
+
             if (props.title) {
               const widthMatch = props.title.match(/width=(\d+)/);
               const heightMatch = props.title.match(/height=(\d+)/);
@@ -88,7 +114,19 @@ export function MarkdownContent({ content }: MarkdownContentProps) {
               if (heightMatch) style.height = `${heightMatch[1]}px`;
             }
 
-            return <ZoomImage src={src} alt={props.alt} style={style} />;
+            // Detect nozoom (data-nozoom or "nozoom" in title)
+            const isNoZoom =
+              props["data-nozoom"] ||
+              (props.title && props.title.toLowerCase().includes("nozoom"));
+
+            return (
+              <ZoomImage
+                src={src}
+                alt={props.alt}
+                style={style}
+                noZoom={isNoZoom}
+              />
+            );
           },
 
           // Tables

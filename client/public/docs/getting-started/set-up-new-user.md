@@ -6,13 +6,24 @@ category: Getting Started
 
 # Setting Up a New User
 
-This section guides you through creating new users in AuditMate, assigning roles, and configuring permissions to ensure they can access the right features and data.
+> **Note:** Only users with **Manage Users / Assign User Roles and Permissions** can perform the following task.  
+> For more information about user roles and permissions, see [Manage User Roles](/docs/getting-started/user-roles).
 
-You will learn how to:
 
-- Add a new user to the system.
-- Assign user roles and permissions.
-- Manage existing users.
-- Understand user access levels for different modules.
+- **Access:** Top Menu → **Admin**, Left Menu → **Users**  
 
-Follow these steps to get your team ready to use AuditMate efficiently.
+
+![Main Screen](./images/users.png "width=800 nozoom")    
+
+## Add User
+|  |  |
+|---|---|
+| - Click **Create** to open the **Create User** form.  <br> - Fill in the required user details such as **Name**, **Primary Facility**, **Email**, and other relevant information. <br> - Assign the appropriate **User Role** to define access permissions. <br> - Click **Save** to add the new user to the system. | ![Create User Form](./images/create-user-form.png "width=400") |
+
+Once saved, the user will appear in the **Users** list and can log in based on the assigned role and permissions.
+
+---
+
+
+## Next Step
+Proceed to: [Main Screen Overview](/docs/getting-started/main-screen-overview)

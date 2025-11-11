@@ -15,6 +15,7 @@ export const docsStructure: DocItem[] = [
       { title: "Installation Guide", path: "/docs/getting-started/installation" },
       { title: "Main Screen Overview", path: "/docs/getting-started/main-screen-overview" },
       { title: "Settings Configuration", path: "/docs/getting-started/settings-config" },
+      { title: "Manage User Roles", path: "/docs/getting-started/user-roles" },
       { title: "Setting Up A New User", path: "/docs/getting-started/set-up-new-user" },
     ],
   },

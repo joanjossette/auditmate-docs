@@ -37,4 +37,4 @@ It is divided into two categories: **Global Settings** and **User Settings**.
 
 ## Next Steps
 
-Continue with [Setting up a New User](/docs/getting-started/set-up-new-user) to get users ready for the system.
+Next, go to: [Manage User Roles](/docs/getting-started/user-roles) to create new roles and manage user permissions.
