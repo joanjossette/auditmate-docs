@@ -6,62 +6,29 @@ category: Machines
 
 # Machine Types
 
-Define and categorize your CNC machines by type.
+⚠️ **Note:** Only users with permission to **Configure Machines and Machine Types** can perform the following task.  
 
-## What are Machine Types?
+## Add Machine Type
 
-Machine types group similar machines based on their capabilities, control systems, and program formats. This organization helps:
-- Standardize program formatting
-- Simplify machine selection
-- Manage communication settings
+|  |  |
+|---|---|
+| You can create a new machine type to categorize your machines.  <br><br>- Access the Machines page by clicking **Machines** in the Top Menu. <br> - Click **Create**, then select **Machine Type** from the dropdown. This will open the **Create Machine Type** form. <br> - Fill in the required details. <br> - Click **Save** to add the machine type to the system. <br><br> Once saved, the new machine type will appear in the **Machine Types** list. | ![Create Machine Type](./images/create-machine-type.png "width=400") |
 
-## Common Machine Types
+## Edit or Update a Machine Type
 
-### Vertical Machining Centers (VMC)
-- 3-axis, 4-axis, or 5-axis configurations
-- Vertical spindle orientation
-- Common for mold making and general machining
+|  |
+|---|
+| You can modify an existing machine type’s information, such as its name or description. <br><br>- Click on the corresponding **Edit icon** of the machine type you want to update. <br> - Update the necessary details. <br> - Click **Save** to apply the changes. <br><br> Once saved, the updated machine type will reflect immediately in the **Machine Types** list. <br><br> ⚠️ **Note:** Editing the Machine Head Count is disabled when there are existing Machines associated with the Machine Type.
+|
 
-### Horizontal Machining Centers (HMC)
-- Horizontal spindle orientation
-- Pallet changers for high-volume production
-- Ideal for multi-sided operations
+## Delete a Machine Type
 
-### Lathes
-- Turning operations
-- Live tooling options
-- Multi-axis turning centers
+|  |
+|---|
+| You can remove a machine type from the system when it is no longer needed. <br><br>- Click the corresponding **Delete icon** of the machine type you want to delete. <br> - Confirm the action when prompted. <br><br> ⚠️ **Note:** Deleting a Machine Type is permanent and also removes all associated machines. |
 
-### Swiss-Type Machines
-- High-precision small parts
-- Sliding headstock design
-- Complex multi-axis operations
+---
 
-### Mill-Turn Centers
-- Combined milling and turning
-- Complete part machining
-- Reduces setups
+## Next Step
 
-## Creating Machine Types
-
-### Step 1: Add Machine Type
-Navigate to the machine configuration area and select **Add Machine Type**.
-
-### Step 2: Define Properties
-Configure the machine type with:
-- **Name**: Descriptive identifier (e.g., "Haas VMC", "Okuma Lathe")
-- **Category**: General classification
-- **Control Type**: Controller brand/model (Fanuc, Haas, Mazak, etc.)
-- **Post Processor**: CAM post processor identifier
-
-### Step 3: Communication Settings
-Set up how programs are transferred:
-- Network protocols
-- Port numbers
-- File transfer methods
-
-### Step 4: Program Format
-Define program requirements:
-- File extensions
-- Header/footer formats
-- Character limitations
+After managing machine types, proceed to [Adding Machines](/docs/machines/adding-machines) to assign individual machines to the machine types.

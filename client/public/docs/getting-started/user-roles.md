@@ -63,4 +63,4 @@ Upon installation, default user roles and their permissions are automatically cr
 
 ## Next Step
 
-After reviewing User Roles, proceed to: [Setting Up a New User](/docs/getting-started/set-up-new-user)
+After setting up user roles and permissions, proceed to [Create a New User](/docs/getting-started/manage-users) to assign these roles to system users.

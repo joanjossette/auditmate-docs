@@ -1,57 +1,42 @@
 ---
 title: Adding Machines
-description: Add individual machine instances
+description: Learn how to add new machines under a Machine Type in AuditMate.
 category: Machines
 ---
 
 # Adding Machines
 
-Add individual machine instances to your AuditMate system.
+There are two ways to add a machine under a Machine Type:
 
-## Machine vs. Machine Type
+### Option 1: Using the Create Button
 
-- **Machine Type**: A category or class of machines (e.g., "Haas VF-2")
-- **Machine**: A specific physical machine on your shop floor (e.g., "VMC-101")
+|  |  |
+|---|---|
+| 1. On the Machines page, click the **Create** button and select **Machine** from the dropdown. <br> 2. The **Choose Machine Type** form will appear, displaying all machine types available in your facility/facilities. <br> 3. Select the machine type where the new machine will be created, then click **Next**. <br> 4. The **Create Machine** form will appear. | ![Create Machine Form](./images/choose-machine-type-form.png "width=400") |
 
-## Adding a Machine
+### Option 2: Using the + Add Machine Button
 
-### Step 1: Create Machine Type
-If you haven't already, create the machine type first.
+|  |  |
+|---|---|
+| 1. Expand the machine type where the new machine will be created. <br> 2. Click the **+ Add Machine** button. <br> 3. The **Create Machine** form will appear. | ![Add Machine Button](./images/add-machine.png "width=400") |
 
-### Step 2: Add Machine Instance
-1. Select the machine type
-2. Click **Add Machine**
-3. Fill in machine details
+---
 
-### Required Information
+## Create Machine Form
 
-**Machine Identification**:
-- **Machine Name**: Unique identifier (e.g., "VMC-101", "Lathe-3")
-- **Machine Number**: Internal asset number
-- **Location**: Shop floor location or cell
+Depending on the machine head count of the selected Machine Type, the **Create Machine** form that will be shown will vary. <br><br>
 
-**Communication Settings**:
-- **IP Address**: Network address for the machine
-- **Port Number**: Communication port
-- **Transfer Protocol**: DNC, FTP, network share, etc.
+|  |  |
+|---|---|
+| **Create Machine Form (Single-Head)**![Create Machine - Single Head](./images/create-machine-single-head.png "width=400") | **Create Machine Form (Multi-Head)**![Create Machine - Multi Head](./images/create-machine-multi-head.png "width=400") |
 
-**Physical Properties**:
-- **Work Envelope**: Maximum part size (X, Y, Z dimensions)
-- **Number of Tools**: Tool magazine capacity
-- **Number of Pallets**: If applicable
+- Fill out the machine details <br> 
+- Click **Save** to create the machine. <br><br>
 
-## Multi-Head Configuration
+ ⚠️**Note:** Any new machine added to a Machine Type already linked to existing operation(s) will be automatically associated with those operations.
 
-For machines with multiple spindles or heads:
-1. Enable multi-head mode
-2. Configure each head separately
-3. Assign head numbers
-4. Set up individual communication for each head
+---
 
-## Testing Communication
+## Next Step
 
-After adding a machine:
-1. Use the **Test Connection** feature
-2. Verify file transfer works
-3. Send a test program
-4. Confirm the machine receives it correctly
+After adding your machines, proceed to [Using the Product](/docs/using-the-product) to learn how to operate and manage AuditMate effectively.

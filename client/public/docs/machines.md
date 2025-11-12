@@ -1,41 +1,19 @@
 ---
 title: Machines
-description: Configure and manage CNC machines
+description: Learn how to view and manage all machines within AuditMate.
+category: Getting Started
 ---
 
 # Machines
 
-Configure and manage CNC machines in AuditMate MFG Revision Manager.
+The **Machines** page serves as the central library for all machine resources in AuditMate.  
+It organizes equipment into **Machine Types** and the specific machines that belong to each type.  
 
-## Machine Management
+This structure helps ensure accurate tracking, reporting, and maintenance of your organization's equipment.
 
-AuditMate supports multiple machine types and configurations to match your manufacturing environment.
 
-## Machine Types
+![Machines](./images/machines.png "width=800 nozoom")    
+**Access:** Top Menu → **Machines**
 
-Define machine types based on capabilities:
-
-- Machining centers
-- Lathes
-- Multi-axis mills
-- Custom configurations
-
-## Adding Machines
-
-1. Navigate to Machine Management
-2. Select "Add Machine Type"
-3. Configure machine properties
-4. Add individual machine instances
-
-## Configuration
-
-Each machine can be configured with:
-
-- Communication settings
-- File transfer protocols
-- Program format requirements
-- Head/spindle configurations
-
-## Multi-Head Machines
-
-For machines with multiple heads or spindles, configure each head separately to ensure proper program routing.
+## Next Step
+After reviewing Machines, proceed to [Machine Types](/docs/machines/machine-types) to define categories for your machines.

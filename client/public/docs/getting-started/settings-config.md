@@ -37,4 +37,4 @@ It is divided into two categories: **Global Settings** and **User Settings**.
 
 ## Next Steps
 
-Next, go to: [Manage User Roles](/docs/getting-started/user-roles) to create new roles and manage user permissions.
+After completing the settings configuration, proceed to [Manage Facilities](/docs/getting-started/manage-facilities) to create and manage facility records in the system.
