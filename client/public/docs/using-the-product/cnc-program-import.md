@@ -12,25 +12,15 @@ Import CNC programs into AuditMate for version control and deployment.
 
 CNC programs are created using external CAM software (like Mastercam, Fusion 360, or similar). AuditMate manages these programs but does not create them.
 
-## Import Process
+ ![Import CNC Programs](./images/import-cnc-programs.png "width=800 nozoom") 
+**Access:** Top Menu → **Parts and Operations**, select a part from the list, then go to **Operations** via the Left Menu or Center Menu. Select the operation, click **Machines** (Left Menu) or **Machine Types** (Center Menu), and finally navigate to **CNC Programs** from the Left or Center Menu.
 
-### Step 1: Navigate to CNC Programs
-With a machine associated to your operation, click **CNC Programs** from the menu.
+## Import CNC Programs
 
-### Step 2: Select Head (Multi-Head Machines)
-For multi-head machines, select the correct head number before importing.
+|  |
+|---|
+| - With a machine associated to your operation, click **CNC Programs** from the menu. <br> - For multi-head machines, select the correct head number before importing. <br> - Import program files using either of the following methods: <br> &nbsp;&nbsp;&nbsp;**Drag and Drop**: Drag program files from your file explorer and drop them into either the MAIN or SUB panels. <br> &nbsp;&nbsp;&nbsp;**Browse for Files**: Click **Click to Browse**, select one or more program files, and click **Open**. <br><br> Once imported, the programs will appear in the CNC Programs list for the selected operation. | 
 
-### Step 3: Import Files
-You can import files in two ways:
-
-**Drag and Drop**:
-- Drag program files from your file explorer
-- Drop into either the MAIN or SUB panels
-
-**Browse for Files**:
-- Click **Click to Browse**
-- Select one or more program files
-- Click Open
 
 ## Main vs. Sub Programs
 
@@ -46,15 +36,13 @@ Reusable routines called by main programs:
 - Subroutines
 - Macros
 
-## Supported File Formats
-
-- G-code files (.nc, .txt, .cnc)
-- Machine-specific formats
-- Post-processed CAM output
-
 ## After Import
 
 Once imported, programs are:
 - Stored with version control
 - Ready for review and authorization
 - Available for editing if needed
+
+## Next Step
+
+After importing CNC programs, proceed to the [Authorization Process](/docs/using-the-product/authorization-process) to approve programs for production.

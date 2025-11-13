@@ -34,7 +34,7 @@ The Core Concepts are the building blocks of AuditMate, representing the entitie
 | **Operations** | Operations define specific manufacturing activities performed on parts. |
 | **Machines** | CNC equipment used to execute operations and programs. |
 | **Programs** | CNC instructions that guide machines during production. |
-
+    
 
 ## Next Steps
 

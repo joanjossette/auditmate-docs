@@ -8,36 +8,21 @@ category: Using the Product
 
 Link operations to the machines that will execute them.
 
-## Associating Machines
 
-### Prerequisites
-- Part must be created
-- Operation must be defined
-- Machine types must be configured in the system
 
-### Association Process
+![Associate a Machine](./images/associate-machine.png "width=800 nozoom")  
+**Access:** Top Menu → **Parts and Operations**, select a part from the list, then go to **Operations** via the Left Menu or Center Menu, select the operation, then click on **Machines** from the Left Menu or **Machine Types** from the Center Menu. The Left Panel shows all machine types configured for the facility.
 
-1. **Select the Operation**: Highlight the operation you created
-2. **Access Machine Types**: Click **Machine Type** from the Left or Center Menu
-3. **Select Machines**: In the Machine Types list, check the box next to each machine you want to associate
+## Associating a Machine
+|  |
+|---|
+| - In the **Machine Types** list, check the box next to the machines you want to associate with the operation. <br><br> Once saved, the selected machines will be linked to the operation and can be used for CNC program setup. |
 
-## Machine Capabilities
 
-When associating machines, consider:
-- **Tooling**: Does the machine have the required tools?
-- **Work Envelope**: Is the part within the machine's capacity?
-- **Spindle Type**: Does it match program requirements?
-- **Number of Axes**: 3-axis, 4-axis, 5-axis compatibility
+|  |
+|---|
+| ⚠️ **Note:**  Prerequisites <br>- Part must be created <br> - Operation must be defined <br> - Machine types and Machines must be configured in the system |
 
-## Multi-Machine Operations
+## Next Step
 
-An operation can be associated with multiple machines:
-- Primary production machine
-- Backup machine for overflow
-- Alternative machines for flexibility
-
-## Managing Associations
-
-- **Add**: Check additional machines
-- **Remove**: Uncheck machines no longer needed
-- **Update**: Modify associations as requirements change
+After associating machines with your operation, proceed to [Import CNC Programs](/docs/using-the-product/cnc-program-import) to link the necessary programs for manufacturing.

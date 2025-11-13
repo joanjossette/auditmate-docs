@@ -39,4 +39,4 @@ Depending on the machine head count of the selected Machine Type, the **Create M
 
 ## Next Step
 
-After adding your machines, proceed to [Using the Product](/docs/using-the-product) to learn how to operate and manage AuditMate effectively.
+For a detailed explanation of the machine configuration and setup options, proceed to [Machine Configuration](/docs/machines/configuration).

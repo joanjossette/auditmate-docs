@@ -1,51 +1,40 @@
 ---
 title: Operation Management
-description: Create and manage manufacturing operations
+description: Create and manage manufacturing operations for your parts
 category: Using the Product
 ---
 
 # Operation Management
 
-Create and manage manufacturing operations for your parts.
+Operations in AuditMate represent specific manufacturing activities performed on a part. They organize the workflow and link parts to machines.
 
-## What is an Operation?
+![Parts Page](./images/operations-page.png "width=800 nozoom")  
+**Access:** Top Menu → **Parts and Operations**, select a part from the list, then go to **Operations** via the Left Menu or Center Menu. The Left Panel shows all operations for the selected part.
 
-An operation represents a specific manufacturing activity performed on a part. Operations organize the workflow and link parts to machines.
+---
+## Create an Operation
 
-## Creating Operations
+|  |  |
+|---|---|
+| - Select a **Part** from the list. <br> - Click **+ Create** in the Left Panel. <br> - Fill in the required details in the **Create Operation** form. <br> - Click **Save** to add the operation to the system. <br><br> Once created, the operation will appear in the **Operations** list for the selected part. | ![Create Operation Form](./images/create-operation-form.png "width=400") |
 
-### Step 1: Select a Part
-Highlight the part you want to add an operation to.
 
-### Step 2: Access Operations
-Click **Operation** from either the Left Menu or Center Menu.
+⚠️ **Note:** Parts can have multiple operations to represent multi-step manufacturing processes.
 
-### Step 3: Create Operation
-1. Click the **+Create** button
-2. Fill in the Create Operation form:
-   - **Operation Name**: Descriptive name for the operation
-   - **Operation Number**: Sequential identifier
-   - **Description**: Details about what this operation accomplishes
+## Manage Operations 
 
-## Operation Workflow
+**Operations Menu**   ![Operations Menu](./images/operations-menu.png "width=300 nozoom") 
 
-Each operation follows this sequence:
-1. Operation is created and linked to a part
-2. Machines are associated with the operation
-3. CNC programs are imported for the operation
-4. Programs are authorized
-5. Programs are deployed to machines
+| Action | Description |  |
+|--------|-------------|---|
+| **Rev** | Update the operation’s revision number to track process or setup changes. |  |
+| **Edit** | Modify existing operation details. |  |
+| **Copy** | Duplicate an operation within the same part, including its associated machines and CNC programs, for quicker setup. |  |
+| **Archive** | Move an operation to the archive when it’s no longer active but needs to be retained for reference. |  |
+| **Hold** | Temporarily suspend an operation to prevent it from being used or processed until further notice. |  |
+| **Release** | Available when an operation is on hold; releases the operation from hold status, making it active again. |  |
+---
 
-## Multiple Operations
+## Next Step
 
-Parts can have multiple operations to represent multi-step manufacturing processes:
-- Operation 10: Roughing
-- Operation 20: Finishing
-- Operation 30: Inspection
-
-## Managing Operations
-
-- **Edit**: Modify operation details
-- **Delete**: Remove operations (only if no programs exist)
-- **Copy**: Duplicate operations to new parts
-- **Reorder**: Change operation sequence
+After managing operations, proceed to [Machine Association](/docs/using-the-product/machine-association) to link operations to machines.

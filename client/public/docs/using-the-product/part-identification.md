@@ -1,47 +1,45 @@
 ---
 title: Part Identification
-description: Define the parts you'll be manufacturing
+description: Define and configure parts to be manufactured in AuditMate, including properties such as name, revision, and authorization type.
 category: Using the Product
 ---
 
 # Part Identification
 
-Define the parts you'll be manufacturing in AuditMate.
+A **Part** represents a physical component to be manufactured. In AuditMate, each part acts as a container for related **operations** and **CNC programs**, serving as the foundation of your manufacturing workflow.
 
-## What is a Part?
+![Parts Page](./images/parts-page.png "width=800 nozoom")  
+**Access:** Top Menu → **Parts and Operations**, Left Menu → **Parts**. <br>
+The Left Panel displays all existing parts created in the system.
 
-A part represents a physical component to be manufactured. Each part in AuditMate serves as a container for operations and CNC programs.
+---
 
-## Creating a New Part
+## Create a New Part
 
-1. Navigate to the main screen
-2. Click the **+Create** button in the Parts panel
-3. Fill in the Create Part form:
-   - **Part Name**: Unique identifier for the part
-   - **Revision Number**: Version control identifier
-   - **Authorization Type**: Required approval workflow
-   - **Description**: Optional details about the part
+|  |  |
+|---|---|
+| You can create and define a new part to be manufactured within your facility. <br><br> - Click **+ Create** in the Left Panel. <br> - Fill in the required details in the **Create Part** form. <br> - Click **Save** to add the part to the system. <br><br> Once created, the part will be listed and available for further setup such as adding operations or CNC programs. | ![Create Part Form](./images/create-part-form.png "width=400") |
 
 ## Part Properties
 
-### Part Name
-The part name should be unique and descriptive. Common naming conventions include:
-- Part numbers from your ERP system
-- Drawing numbers
-- Internal part codes
+| **Property** | **Description** |
+|---------------|-----------------|
+| **Part Name** | A unique and descriptive identifier for the part. Use consistent naming conventions such as part numbers, drawing numbers, or internal codes. |
+| **Part Revision** | Version control identifier. Formats are configured in **Settings → Global Settings → Part Revision Format**.  |
+| **Part Authorization Type** | Determines who can approve parts for production. Configure these under **Settings → Global Settings → Part Authorization Types** to align with quality control workflows. |
+| **Part Description** | Optional field for providing additional context or details about the part. |
 
-### Revision Numbers
-Revisions track changes to parts over time. The system can be configured to use:
-- Letter-based revisions (A, B, C...)
-- Number-based revisions (1, 2, 3...)
-- Alphanumeric combinations
-
-### Authorization Types
-Authorization types determine who can approve parts for production. Configure these in Settings to match your quality control processes.
+---
 
 ## Best Practices
 
-- Use consistent naming conventions
-- Include relevant part information in descriptions
-- Set appropriate authorization types based on part criticality
-- Review existing parts before creating duplicates
+- Use consistent naming and revision conventions  
+- Include meaningful descriptions for clarity  
+- Set appropriate authorization types based on part importance  
+- Review existing parts before creating new ones to avoid duplicates  
+
+---
+
+## Next Step
+
+After identifying parts, proceed to [Operation Creation](/docs/using-the-product/operation-creation) to define the manufacturing steps associated with each part.

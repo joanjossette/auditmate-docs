@@ -1,73 +1,45 @@
 ---
 title: Machine Configuration
-description: Configure machine settings and communication
+description: Learn how to configure machine settings, including DNC setup, scanning folders, and communication parameters.
 category: Machines
 ---
 
 # Machine Configuration
 
-Configure machine settings, communication protocols, and advanced options.
+The **Machine Configuration** is defined within the **Create Machine** form.  
+These settings determine how each CNC machine communicates with AuditMate, handles CNC program transfers, and scans for modifications.
 
-## Communication Setup
+|  |  |
+|---|---|
+| **Create Machine Form (Single-Head)**![Create Machine - Single Head](./images/create-machine-single-head.png "width=400") | **Create Machine Form (Multi-Head)**![Create Machine - Multi Head](./images/create-machine-multi-head.png "width=400") |
 
-### Network Configuration
-For Ethernet-connected machines:
-- **IP Address**: Static IP recommended for reliability
-- **Port**: Common ports include 5001, 8080, or custom
-- **Protocol**: TCP/IP, FTP, or SMB/CIFS
 
-### Serial Communication (DNC)
-For RS-232 connected machines:
-- **Baud Rate**: Common rates: 9600, 19200
-- **Data Bits**: Usually 8
-- **Parity**: None, Even, or Odd
-- **Stop Bits**: 1 or 2
-- **Flow Control**: XON/XOFF or hardware handshaking
+## Configuration Details
 
-## Program Format Settings
+| **Field / Section** | **Description** |
+|----------------------|-----------------|
+| **Machine Name** | Unique name that identifies the machine within the system. |
+| **Machine Description** | Short description of the machine (e.g., model or purpose). |
+| **DNC Settings** | Defines how AuditMate communicates with the machine for sending CNC programs. |
+| → **Workplace ID** | Specifies the workstation or network identifier associated with the machine. |
+| → **DNC Type** | Determines the communication method for program transfer. <br>**Options:** <ul><li>**Send SMB** – Transfers via shared folder (SMB protocol).</li><li>**Send** – Sends programs through direct path.</li><li>**Send SMB to Active Programs Folder** – Sends to designated shared folder for active programs.</li></ul> |
+| **Program Modifications Scanning** | Enables automatic detection of CNC program changes. |
+| → **Scanned Folder** | Folder monitored for new or modified CNC programs. |
+| → **DNC Incoming Folder** | Directory where scanned or updated programs are received and stored. |
+| **FOCAS Machine Settings** | Applies when the machine uses **FOCAS (Fanuc Open CNC API)** for communication. |
+| → **Fanuc CNC Address** | IP address of the Fanuc CNC controller. |
+| → **Fanuc CNC Port** | Port number used for communication. |
+| **DNC Type – Specific Options** | Additional fields depending on the selected **DNC Type**. |
+| → **Send SMB** | Option to **Delete last sent folder during send**, clearing previous files before new transfer. |
+| → **Send** | - Specify **paths for each machine head**.<br>- **Active Program Range:** Defaults to **0–6999**.<br>- Option to **Enable program range deletion** to remove programs outside the set range. |
+| → **Send SMB to Active Programs Folder** | Requires specifying a **Target Directory** for storing active programs. |
 
-### File Naming
-Configure how programs are named when sent to machines:
-- Prefix/suffix patterns
-- Character limitations
-- Extension requirements
+---
 
-### Program Headers and Footers
-Define standard headers and footers:
-- Program start codes
-- Tool change sequences
-- End of program codes
+⚠️ **Note:** Ensure all network addresses, folder paths, and communication ports are correctly configured to prevent transfer or connectivity errors.
 
-## Advanced Settings
+---
 
-### Character Encoding
-- ASCII standard
-- Special character handling
-- Line ending format (CR/LF)
+## Next Step
 
-### Baud Rate (Serial Communication)
-Common settings:
-- 9600 baud
-- 19200 baud
-- Custom rates
-
-### Handshaking
-- XON/XOFF flow control
-- Hardware handshaking
-- Timeout settings
-
-## Backup and Restore
-
-Export machine configurations:
-1. Select machine
-2. Choose **Export Configuration**
-3. Save configuration file
-4. Import to restore or duplicate settings
-
-## Best Practices
-
-- Document custom configurations
-- Test after configuration changes
-- Maintain backup of working configurations
-- Use consistent naming conventions
-- Regular communication testing
+Proceed to [Using the Product](/docs/using-the-product) to learn about the system’s **workflow steps** and **core concepts**, including how parts, operations, and machines interact in the production process.

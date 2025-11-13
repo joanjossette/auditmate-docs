@@ -4,7 +4,7 @@ description: Learn how to create, configure, and manage user accounts in AuditMa
 category: Getting Started
 ---
 
-# Setting Up a New User
+# Manage Users
 
 ⚠️**Note:** Only users with **Manage Users / Assign User Roles and Permissions** can perform the following task.  
 For more information about user roles and permissions, see [Manage User Roles](/docs/getting-started/user-roles).
@@ -42,9 +42,3 @@ For more information about user roles and permissions, see [Manage User Roles](/
 ## Next Step
 
 After managing users, proceed to [Manage Machines](/docs/machines) to configure and organize machine resources within your facilities.
-
-
-
-
-
-
