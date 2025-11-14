@@ -8,63 +8,23 @@ category: Using the Product
 
 Approve parts, operations, and CNC programs for production use.
 
-## Why Authorization?
-
-Authorization ensures that only validated and approved programs are sent to production machines, maintaining quality and reducing errors.
-
-## Authorization Workflow
-
-The entire setup must be authorized before execution:
-1. Part authorization
-2. Operation authorization
-3. Machine authorization
-4. CNC Program authorization
-
 ## Who Can Authorize?
 
 Authorization permissions are based on:
-- User role assignments
-- Authorization type settings
-- Configured approval workflows
-
-Configure these in **Settings > Part Authorization Types**.
+- User role assignments (Configure these in **Admin** > **Users**)
+- Authorization type settings (Configure these in **Settings > Global Settings > Part Authorization Types**.)
 
 ## Authorization Process
 
-### Step 1: Login as Authorized User
-Only users with appropriate permissions can authorize programs.
+|  |  |
+|---|---|
+| - Log in using an account with authorization permissions. <br> - Navigate through: **Part → Operation → Machine Type → CNC Programs**. <br> - Review the program details, including version, revision, and any alerts. <br> - Click the **Authorization** icon in the right-most column. <br> - In the **Authorize Program Status Change** form, toggle to **Authorize**, and click **Save**. | ![Authorize Program](./images/authorize-program.png "width=400") |
 
-### Step 2: Navigate to Programs
-Follow the hierarchy:
-- Select Part
-- Select Operation
-- Select Machine Type
-- View CNC Programs
+### Authorization States
 
-### Step 3: Review Program
-Before authorizing:
-- Verify program correctness
-- Check version and revision
-- Review any warnings or alerts
+- **Development** – The program is still being created, edited, or validated. Not yet approved for production use.  
+- **Production** – The program has been reviewed and authorized. Ready for use on the shop floor.
 
-### Step 4: Authorize
-1. Click the **Authorization icon** in the right-most column
-2. The Authorize Program Status Change form opens
-3. Review the details
-4. Toggle to **Authorize**
-5. Click **Save**
+## Next Step
 
-## Authorization States
-
-- **Pending**: Awaiting authorization
-- **Authorized**: Approved for production
-- **Rejected**: Not approved (requires revision)
-- **Expired**: Authorization time limit exceeded
-
-## Revoking Authorization
-
-If a program needs to be revised:
-1. Open the authorization form
-2. Toggle to remove authorization
-3. Make necessary changes
-4. Re-authorize when ready
+After authorizing CNC programs, proceed to [Sending to a Machine](/docs/using-the-product/sending-to-machine) to transfer programs to machines for execution.

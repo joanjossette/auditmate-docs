@@ -8,43 +8,36 @@ category: Using the Product
 
 Deploy authorized CNC programs to production machines.
 
-## Prerequisites
+## Prerequisite
 
-Before sending programs to machines:
-- ✓ Part is created
-- ✓ Operation is defined
-- ✓ Machine is associated
-- ✓ Programs are imported
-- ✓ Programs are authorized
-- ✓ Machine communication is configured
+Before sending CNC programs to a machine, they must be **tested** and correctly **tagged** in the system.
 
-## Send Process
+To update the program’s download status:
+- Click the **Untested** status.
+- The **Authorize Download Status Change** form will open.
+- Toggle the status to **Authorize**.
+- Click **Save**.
 
-### Step 1: Select the Program
-Navigate to the authorized CNC program you want to deploy.
+Once updated to **Tested**, the program becomes eligible for **Sending to Machine**.
 
-### Step 2: Initiate Transfer
-Click the **Send to Machine** button or icon.
+⚠️ **Note:** Control who can authorize downloads in: **Settings > Global Settings > Download Status Authorization** <br>
 
-### Step 3: Confirm Transfer
-Review the transfer details:
-- Target machine
-- Program name
-- File size
-- Destination path
+## Send to Machine
 
-### Step 4: Monitor Transfer
-The system displays transfer progress:
-- Connection status
-- Transfer percentage
-- Completion confirmation
+|  |  |
+|---|---|
+| - Click the **Send** button for the corresponding machine and head. <br> - The **Send to Machine** form will open. <br> - Select the programs you want to send by checking the boxes next to each program. <br> - Click **Send to Machine** to begin the transfer. <br><br> The system will process the request and handle delivery based on the configured communication method for that machine. | ![Send to Machine](./images/send-to-machine.png "width=400") |
+
+
+---
 
 ## Transfer Methods
 
 AuditMate supports multiple transfer protocols:
-- **Network Transfer**: Direct network connection
-- **DNC (Direct Numerical Control)**: Serial/RS-232 communication
-- **File Share**: Network folder synchronization
+
+- **Network Transfer** – Direct IP-based communication to compatible machines.  
+- **DNC (Direct Numerical Control)** – Traditional RS-232 or serial-based transfer.  
+- **File Share** – Sending programs to a monitored network folder for machine retrieval.  
 
 ## Troubleshooting
 
@@ -62,10 +55,3 @@ AuditMate supports multiple transfer protocols:
 - Confirm transfer completed successfully
 - Check destination folder on machine
 - Verify file naming conventions
-
-## Download Status
-
-Control who can authorize downloads in:
-**Settings > Download Status Authorization**
-
-This ensures only qualified operators can send programs to machines.

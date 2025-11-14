@@ -23,16 +23,17 @@ Operations in AuditMate represent specific manufacturing activities performed on
 
 ## Manage Operations 
 
-**Operations Menu**   ![Operations Menu](./images/operations-menu.png "width=300 nozoom") 
+**Operations Menu** ![Operations Menu](./images/operations-menu.png "width=300 nozoom")  
+Displayed on the Left Panel and becomes available when an operation is selected.
 
-| Action | Description |  |
-|--------|-------------|---|
-| **Rev** | Update the operation’s revision number to track process or setup changes. |  |
-| **Edit** | Modify existing operation details. |  |
-| **Copy** | Duplicate an operation within the same part, including its associated machines and CNC programs, for quicker setup. |  |
-| **Archive** | Move an operation to the archive when it’s no longer active but needs to be retained for reference. |  |
-| **Hold** | Temporarily suspend an operation to prevent it from being used or processed until further notice. |  |
-| **Release** | Available when an operation is on hold; releases the operation from hold status, making it active again. |  |
+| Action | Description |
+|--------|-------------|
+| **Rev** | Update the operation’s revision number to track process or setup changes. |
+| **Edit** | Modify existing operation details. |
+| **Copy** | Duplicate an operation within the same part, including its associated machines and CNC programs, for quicker setup. |
+| **Archive** | Move an operation to the archive when it’s no longer active but needs to be retained for reference. |
+| **Hold** | Temporarily suspend an operation to prevent it from being used or processed until further notice. |
+| **Release** | Available when an operation is on hold; releases the operation from hold status, making it active again. |
 ---
 
 ## Next Step

@@ -5,11 +5,10 @@ description: Version control, backup, and historical records
 
 # Archive
 
-Manage version control, backup, and access historical records in AuditMate MFG Revision Manager.
+The archive system preserves the complete version history of all CNC programs and related documents, supports a structured backup strategy, and provides a revisit function for restoring or reviewing previous versions.
 
-## Document Archive
-
-The archive system maintains complete version history for all CNC programs and related documents.
+![Archive](./images/archive.png "width=800 nozoom")    
+**Access:** Top Menu → **Archive**
 
 ## Features
 
@@ -21,21 +20,6 @@ The archive system maintains complete version history for all CNC programs and r
 ## Accessing Archived Files
 
 1. Navigate to the Archive section
-2. Search by part name, date, or revision
+2. Search by part name, part revision, operation name, operation revision or archived date
 3. Select the version you need
 4. Preview or restore as needed
-
-## Version History
-
-Every change to a CNC program is tracked with:
-- Timestamp
-- User who made the change
-- Description of changes
-- Authorization status
-
-## Best Practices
-
-- Regularly review archive for compliance
-- Document significant changes
-- Maintain consistent naming conventions
-- Use archive search features effectively

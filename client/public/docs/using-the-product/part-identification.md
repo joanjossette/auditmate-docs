@@ -31,6 +31,21 @@ The Left Panel displays all existing parts created in the system.
 
 ---
 
+## Manage Parts
+
+**Parts Menu** ![Parts Menu](./images/parts-menu.png "width=300 nozoom")  
+Displayed on the Left Panel and becomes available when a part is selected.
+
+| Action | Description |
+|--------|-------------|
+| **Rev** | Update the part’s revision number to reflect design, specification, or documentation changes. |
+| **Edit** | Modify the part’s details. |
+| **Copy** | Create a duplicate of the part, including its associated operations, for faster setup of similar parts. |
+| **Archive** | Move the part to the archive when it is no longer active but must remain in the system for historical reference. |
+| **Hold** | Temporarily restrict the part from being used in operations or production until issues are resolved or approval is granted. |
+| **Release** | Available when a part is on hold; restores the part to active status so it can be used again. |
+---
+
 ## Best Practices
 
 - Use consistent naming and revision conventions  
@@ -42,4 +57,4 @@ The Left Panel displays all existing parts created in the system.
 
 ## Next Step
 
-After identifying parts, proceed to [Operation Creation](/docs/using-the-product/operation-creation) to define the manufacturing steps associated with each part.
+After identifying parts, proceed to [Operation Creation](/docs/using-the-product/operation-management) to define the manufacturing steps associated with each part.
