@@ -47,6 +47,9 @@ export const docsStructure: DocItem[] = [
     title: "Archive",
     path: "/docs/archive",
     icon: "Archive",
+    children: [
+      { title: "Revisit", path: "/docs/archive/revisit" },
+    ],
   },
   {
     title: "Contact Information",

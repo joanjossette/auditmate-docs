@@ -1,20 +1,16 @@
 import { Switch, Route } from "wouter";
-import { Router as WouterRouter } from "wouter";
-
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/lib/theme-provider";
-
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-
 import Home from "@/pages/Home";
 import DocPage from "@/pages/DocPage";
 import NotFound from "@/pages/not-found";
 
-function AppRoutes() {
+function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
@@ -26,22 +22,20 @@ function AppRoutes() {
 
 function App() {
   return (
-    <WouterRouter base="/">
-      <QueryClientProvider client={queryClient}>
-        <ThemeProvider defaultTheme="light">
-          <TooltipProvider>
-            <div className="flex flex-col min-h-screen">
-              <Header />
-              <main className="flex-1">
-                <AppRoutes />
-              </main>
-              <Footer />
-            </div>
-            <Toaster />
-          </TooltipProvider>
-        </ThemeProvider>
-      </QueryClientProvider>
-    </WouterRouter>
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider defaultTheme="light">
+        <TooltipProvider>
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            <main className="flex-1">
+              <Router />
+            </main>
+            <Footer />
+          </div>
+          <Toaster />
+        </TooltipProvider>
+      </ThemeProvider>
+    </QueryClientProvider>
   );
 }
 
