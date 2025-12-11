@@ -13,12 +13,15 @@ import { Footer } from "@/components/Footer";
 import Home from "@/pages/Home";
 import DocPage from "@/pages/DocPage";
 import NotFound from "@/pages/not-found";
+import PricingSection from "@/pages/Pricing"; // adjust the path if needed
+
 
 function AppRoutes() {
   return (
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/docs/*" component={DocPage} />
+      <Route path="/pricing" component={PricingSection} />  {/* <-- Add this */}
       <Route component={NotFound} />
     </Switch>
   );
