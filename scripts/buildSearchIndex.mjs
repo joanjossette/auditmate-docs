@@ -44,6 +44,16 @@ async function buildIndex() {
     });
   }
 
+  // Add Pricing page manually for search
+  docs.push({
+    title: "Licensing Plans",
+    description:
+      "Compare all license plans for AuditMate MFG Revision Manager.",
+    path: "/pricing",
+    content:
+      "Base License, Base + Incoming File Management, Base + Live Monitoring, ExamDiff, production, CNC program management, incoming file manager, live monitoring, Fanuc FOCAS, license, pricing",
+  });
+
   await fs.writeFile(OUTPUT_FILE, JSON.stringify(docs, null, 2), "utf-8");
   console.log(`✅ Search index built: ${OUTPUT_FILE}`);
 }

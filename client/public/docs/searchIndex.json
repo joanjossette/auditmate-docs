@@ -134,7 +134,19 @@
   {
     "title": "Getting Started",
     "description": "Welcome to AuditMate MFG Revision Manager documentation",
-    "path": "/docs/getting-started/index",
+    "path": "/docs/getting-started/indexsdfdfdf",
     "content": "Welcome to AuditMate MFG Revision Manager documentation   Getting Started Welcome to the AuditMate MFG Revision Manager documentation. This guide will help you get up and running quickly.  Overview AuditMate MFG Revision Manager is a webbased platform designed to streamline the way manufacturers and operators manage CNC programs and related documents.  What You'll Learn  How to install and configure AuditMate  Basic concepts and terminology  Your first steps with the platform  Next Steps Continue to the Installation Guide to begin setting up your system.  Getting Started Overview What You'll Learn Next Steps"
+  },
+  {
+    "title": "Revisit",
+    "description": "Review all part details before archiving, including linked operations, metadata, and validation information.",
+    "path": "/docs/archive/revisit",
+    "content": "Review all part details before archiving, including linked operations, metadata, and validation information. \r  Revisit\r \r ⚠️ Note: Only users with permission to View Archive / Revisit can access the Revisit page.\r \r   \r Access: Top Menu → Archive, Left Menu → Revisit\r \r  Overview\r \r |  |\r ||\r | The Revisit page allows users to view a part and its details as they were before being archived. This helps verify historical information, review previous configurations, and reference the part’s state prior to archival. <br<br The page displays: <br  Part information (Part ID, Name, Status) <br  Linked operations or steps <br  Associated Machine  Uploaded documents <br  CNC Programs  Others|\r \r  How to Use Revisit\r \r \r |  |\r ||\r | You can review a part and see its details as they were before archival. <br Go to the Archive section and select the part. <br  Click Revisit icon to open the complete detail preview. <br  Review all displayed information for reference or historical context. <br  Use this view to understand the part’s previous state, including operations, metadata, and related records. |\r \r \r  Important Notes\r \r |  |\r ||\r |  Archiving is permanent unless restored by an authorized user. <br  Ensure that the part is no longer active or tied to ongoing processes. <br  Doublecheck dependencies or related modules before confirming. |\r \r \r  Revisit Overview How to Use Revisit Important Notes"
+  },
+  {
+    "title": "Licensing Plans",
+    "description": "Compare all license plans for AuditMate MFG Revision Manager.",
+    "path": "/pricing",
+    "content": "Base License, Base + Incoming File Management, Base + Live Monitoring, ExamDiff, production, CNC program management, incoming file manager, live monitoring, Fanuc FOCAS, license, pricing"
   }
 ]

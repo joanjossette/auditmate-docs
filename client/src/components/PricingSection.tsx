@@ -17,8 +17,9 @@ const licenseCards: LicenseCard[] = [
       /* price: "Contact Sales", */
       licenseType: "Per machine, minimum 10 machines",
       features: [
-          "All production-related features including Parts & Operations (no Email)",
-          "Archive and other production features",
+          "Full Parts & Operations program management (no Email module)",
+          "Comprehensive program archive with automatic versioning",
+          "Program change tracking and audit logs",
       ],
       /* ctaText: "Get Base License",
       ctaLink: "#signup-base", */
@@ -32,10 +33,10 @@ const licenseCards: LicenseCard[] = [
       licenseType: "Per machine, must match Base License machine count",
       features: [
           "All Base License features",
-          "Incoming File Manager (Utilities)",
-          "Incoming File Modification Scanning (scanned & incoming folders)",
-          "Email functionality at Operation level and in Settings (Server Setup)",
-          "Includes Examdiff License",
+          "Incoming File Manager for controlled review of CNC programs",
+          "Automatic modification scanning (Scanned & Incoming folders)",
+          "Email support for Operations and Server Setup",
+          "Includes Examdiff License (for fast revision comparisons)",
       ],
       /* ctaText: "Choose Incoming File Management",
       ctaLink: "#signup-incoming", */
@@ -50,8 +51,8 @@ const licenseCards: LicenseCard[] = [
       licenseType: "Per machine, no minimum; choose only machines being monitored",
       features: [
           "All Base License features",
-          "Enables Machine (FOCAS) and Scanned folder in Machine settings",
-          "Includes Examdiff License",
+          "Automatic program comparison (Machine vs Record)",
+          "Includes Examdiff License (for fast revision comparisons)",
       ],
       /* ctaText: "Choose Live Monitoring", */
       /* ctaLink: "#signup-live-monitoring", */
@@ -67,7 +68,7 @@ export const PricingSection: React.FC = () => {
       <div className="container px-6 max-w-7xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-4">License Plans</h2>
         <p className="text-lg text-gray-600 mb-12">
-          Compare all licenses and choose the best option for your machines.
+          Choose the plan that best supports your machine and operational needs.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
