@@ -13,7 +13,7 @@ import { Footer } from "@/components/Footer";
 import Home from "@/pages/Home";
 import DocPage from "@/pages/DocPage";
 import NotFound from "@/pages/not-found";
-import PricingSection from "@/pages/Pricing"; // adjust the path if needed
+import PricingSection from "@/pages/pricing"; // adjust the path if needed
 
 
 function AppRoutes() {
