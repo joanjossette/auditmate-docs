@@ -17,9 +17,10 @@ const licenseCards: LicenseCard[] = [
       /* price: "Contact Sales", */
       licenseType: "Per machine, minimum 10 machines",
       features: [
-          "Full Parts & Operations program management (no Email module)",
-          "Comprehensive program archive with automatic versioning",
-          "Program change tracking and audit logs",
+          "Full Parts & Operations Program Management (no Email module)",
+          "Comprehensive Program Archive With Automatic Versioning",
+          /*"Program change tracking and audit logs",*/
+          "Program Revision Tracking and Audit Logs",
       ],
       /* ctaText: "Get Base License",
       ctaLink: "#signup-base", */
@@ -34,7 +35,7 @@ const licenseCards: LicenseCard[] = [
       features: [
           "All Base License features",
           "Incoming File Manager for controlled review of CNC programs",
-          "Automatic modification scanning (Scanned & Incoming folders)",
+          /*"Automatic modification scanning (Scanned & Incoming folders)",*/
           "Email support for Operations and Server Setup",
           "Includes Examdiff License (for fast revision comparisons)",
       ],
@@ -51,7 +52,8 @@ const licenseCards: LicenseCard[] = [
       licenseType: "Per machine, no minimum; choose only machines being monitored",
       features: [
           "All Base License features",
-          "Automatic program comparison (Machine vs Record)",
+          /*"Automatic program comparison (Machine vs Record)",*/
+          "Automatic File Modification Scanning",
           "Includes Examdiff License (for fast revision comparisons)",
       ],
       /* ctaText: "Choose Live Monitoring", */

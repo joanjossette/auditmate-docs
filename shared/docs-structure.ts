@@ -31,6 +31,15 @@ export const docsStructure: DocItem[] = [
     ],
   },
   {
+    title: "Parts & Operations",
+    path: "/docs/parts-and-operations",
+    icon: "Server",
+    children: [
+      { title: "Parts", path: "/docs/parts-and-operations/parts" },
+      { title: "Operations", path: "/docs/parts-and-operations/operations" },
+    ],
+  },
+  {
     title: "Using the Product",
     path: "/docs/using-the-product",
     icon: "Settings",

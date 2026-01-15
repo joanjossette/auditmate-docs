@@ -58,7 +58,7 @@ http://localhost:3003/login
 ```
 
 Default credentials:
-- **Username**: ExcellerantAdmin
+- **Username**: AuditmateAdmin
 - **Password**: Testingpw24#
 
 > **Security Note**: Change the default password immediately after first login.
