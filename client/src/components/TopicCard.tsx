@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { LucideIcon, Rocket, Settings, Server, Archive, ChevronRight } from "lucide-react";
+import { LucideIcon, Rocket, Settings, Server, Archive, ChevronRight, MonitorCog, BookOpen, Drill } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const iconMap: Record<string, LucideIcon> = {
@@ -7,6 +7,9 @@ const iconMap: Record<string, LucideIcon> = {
   Settings,
   Server,
   Archive,
+  Drill,
+  MonitorCog,
+  BookOpen,
 };
 
 interface TopicCardProps {

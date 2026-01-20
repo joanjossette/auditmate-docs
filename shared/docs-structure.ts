@@ -23,7 +23,7 @@ export const docsStructure: DocItem[] = [
   {
     title: "Machines",
     path: "/docs/machines",
-    icon: "Server",
+    icon: "Drill",
     children: [
       { title: "Machine Types", path: "/docs/machines/machine-types" },
       { title: "Adding Machines", path: "/docs/machines/adding-machines" },
@@ -42,7 +42,7 @@ export const docsStructure: DocItem[] = [
   {
     title: "Using the Product",
     path: "/docs/using-the-product",
-    icon: "Settings",
+    icon: "MonitorCog",
     children: [
       { title: "Part Identification", path: "/docs/using-the-product/part-identification" },
       { title: "Operation Management", path: "/docs/using-the-product/operation-management" },
@@ -59,6 +59,14 @@ export const docsStructure: DocItem[] = [
     children: [
       { title: "Revisit", path: "/docs/archive/revisit" },
     ],
+  },  
+  {
+    title: "Utilities",
+    path: "/docs/incoming-file-manager",
+    icon: "ScanSearch",
+    children: [
+      { title: "Incoming File Manager", path: "/docs/incoming-file-manager" },
+    ],
   },
   {
     title: "Contact Information",
@@ -72,19 +80,19 @@ export const topicCards = [
     title: "Getting Started",
     description: "Quick start guide, installation, and initial setup",
     path: "/docs/getting-started",
-    icon: "Rocket",
+    icon: "BookOpen",
   },
   {
     title: "Using the Product",
     description: "Step-by-step workflows, features, and best practices",
     path: "/docs/using-the-product",
-    icon: "Settings",
+    icon: "MonitorCog",
   },
   {
     title: "Machines",
     description: "Machine configuration, types, and management",
     path: "/docs/machines",
-    icon: "Server",
+    icon: "Drill",
   },
   {
     title: "Archive",

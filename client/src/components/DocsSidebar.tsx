@@ -9,6 +9,9 @@ import {
   Server,
   Archive,
   Mail,
+  Drill,
+  ScanSearch,
+  MonitorCog,
 } from "lucide-react";
 import { docsStructure, DocItem } from "@shared/docs-structure";
 
@@ -18,6 +21,9 @@ const iconMap: Record<string, LucideIcon> = {
   Server,
   Archive,
   Mail,
+  Drill,
+  ScanSearch,
+  MonitorCog,
 };
 
 function SidebarItem({ item, level = 0 }: { item: DocItem; level?: number }) {
