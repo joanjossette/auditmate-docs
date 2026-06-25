@@ -64,6 +64,18 @@ export const docsStructure: DocItem[] = [
             title: "Firewall Setup",
             path: "/docs/getting-started/installation/firewall-setup",
           },
+          {
+            title: "IIS Application Pool and Site Configuration",
+            path: "/docs/getting-started/installation/iis-application-pool-and-site-configuration",
+          },
+          {
+            title: "Power Plan Configuration",
+            path: "/docs/getting-started/installation/power-plan-configuration",
+          },
+          {
+            title: "Verification",
+            path: "/docs/getting-started/installation/verification",
+          },
         ],
       },
       { title: "Main Screen Overview", path: "/docs/getting-started/main-screen-overview" },
