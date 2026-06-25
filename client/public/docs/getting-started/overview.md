@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Overview
 description: Introduction to AuditMate MFG Revision Manager
 category: Getting Started
 ---
@@ -21,15 +21,19 @@ The system provides a centralized hub where users can:
 ## Key Benefits
 
 ### Version Control
+
 Maintain complete control of the CNC program lifecycle with automatic versioning and change tracking.
 
 ### Data Security
+
 Ensure compliance with company standards through document restrictions and user permission management.
 
 ### Error Reduction
+
 Advanced validation and approval workflows help reduce errors and improve quality.
 
 ### Complete Traceability
+
 Every program, file, and communication is logged for compliance and audit purposes.
 
 ## Built for Manufacturing

@@ -5,18 +5,21 @@ description: Welcome to AuditMate MFG Revision Manager documentation
 
 # Getting Started
 
-Welcome to the AuditMate MFG Revision Manager documentation. This guide will help you get up and running quickly.
+Welcome to the AuditMateMFG™ Revision Manager documentation. This guide will help you get up and running quickly.
 
-## Overview
+## Introduction
 
-AuditMate MFG Revision Manager is a web-based platform designed to streamline the way manufacturers and operators manage CNC programs and related documents.
+AuditMateMFG™ Revision Manager is designed to manage, control, and track revisions of manufacturing data, including CNC programs, parts, and operations. It helps ensure that only the latest approved versions are used in production, improving traceability, and overall operational efficiency.
+
+The system provides centralized control, user access management, and workflow-based authorization processes to support structured and secure manufacturing operations.
 
 ## What You'll Learn
 
-- How to install and configure AuditMate
-- Basic concepts and terminology
-- Your first steps with the platform
+- Prepare your environment for installation
+- Install and configure the system components
+- Understand key concepts and system structure
+- Navigate the platform and perform initial setup
 
 ## Next Steps
 
-Continue to the [Installation Guide](/docs/getting-started/installation) to begin setting up your system.
+Before proceeding, ensure that all [hardware and software prerequisites](/docs/getting-started/system-requirements) are met to avoid installation issues.

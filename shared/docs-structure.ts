@@ -11,8 +11,61 @@ export const docsStructure: DocItem[] = [
     path: "/docs/getting-started",
     icon: "BookOpen",
     children: [
-      { title: "Introduction", path: "/docs/getting-started/introduction" },
-      { title: "Installation Guide", path: "/docs/getting-started/installation" },
+      //{ title: "Overview", path: "/docs/getting-started/overview" },
+       { title: "System Requirements", path: "/docs/getting-started/system-requirements" },
+      /*
+      {
+        title: "System Requirements",
+        path: "/docs/getting-started/system-requirements",
+        children: [
+          {
+            title: "Hardware Requirements",
+            path: "/docs/getting-started/system-requirements/hardware",
+          },
+          {
+            title: "Software Requirements",
+            path: "/docs/getting-started/system-requirements/software",
+          },
+        ],
+      },
+      */
+      // { title: "Installation Guide", path: "/docs/getting-started/installation" },
+      {
+        title: "Installation Guide",
+        path: "/docs/getting-started/installation",
+        children: [
+          {
+            title: "SQL Server Configuration",
+            path: "/docs/getting-started/installation/sql-server-configuration",
+            children: [
+              {
+                title: "Enable Network Protocols",
+                path: "/docs/getting-started/installation/sql-server-configuration/enable-network-protocols",
+              },
+              {
+                title: "Configure Authentication Mode",
+                path: "/docs/getting-started/installation/sql-server-configuration/configure-authentication-mode",
+              },
+              {
+                title: "Create SQL Server Login",
+                path: "/docs/getting-started/installation/sql-server-configuration/create-sql-login",
+              },
+            ],
+          },
+          {
+            title: "IIS Setup",
+            path: "/docs/getting-started/installation/iis-setup",
+          },
+          {
+            title: "Application Deployment",
+            path: "/docs/getting-started/installation/application-deployment",
+          },
+          {
+            title: "Firewall Setup",
+            path: "/docs/getting-started/installation/firewall-setup",
+          },
+        ],
+      },
       { title: "Main Screen Overview", path: "/docs/getting-started/main-screen-overview" },
       { title: "Settings Configuration", path: "/docs/getting-started/settings-config" },
       { title: "Manage Facilities", path: "/docs/getting-started/manage-facilities" },

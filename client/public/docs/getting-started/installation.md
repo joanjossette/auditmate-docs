@@ -6,86 +6,48 @@ category: Getting Started
 
 # Installation Guide
 
-This guide will walk you through the installation process for AuditMate MFG Revision Manager.
+Follow the steps below in sequence to ensure a successful installation:
 
-## System Requirements
+1. [SQL Server Configuration](/docs/getting-started/installation/sql-server-configuration)  
+   Configure the database server, including enabling network protocols, setting authentication mode, and creating the required login.
 
-Before installing, ensure your system meets the following requirements:
+2. [IIS Setup](/docs/getting-started/installation/iis-setup)  
+   Install and configure Internet Information Services (IIS) to host the web application.
 
-- **Operating System**: Windows Server 2016 or later
-- **Database**: PostgreSQL 12 or later
-- **Browser**: Chrome, Firefox, or Edge (latest versions)
-- **Network**: Local network access for machine communication
+3. [Application Deployment](/docs/getting-started/installation/application-deployment)  
+   Deploy the AuditMateMFG™ application files and configure initial settings.
 
-## Installation Steps
+4. [Firewall Setup](/docs/getting-started/installation/firewall-setup)  
+   Configure firewall rules to allow required inbound and outbound connections.
 
-### 1. Download the Installer
+5. [IIS Application Pool and Site Configuration](/docs/getting-started/installation/iis-app-pool-site-configuration)  
+   Set up the application pool and configure the IIS site for optimal performance and stability.
 
-Contact Nexas America to receive your installation package and license key.
+6. [Power Plan Configuration](/docs/getting-started/installation/power-plan-configuration)  
+   Adjust system power settings to prevent performance throttling and ensure consistent operation.
 
-### 2. Run the Setup Wizard
+7. [Verification](/docs/getting-started/installation/verification)  
+   Validate the installation to ensure all components are properly configured and functioning as expected.
 
-Execute the installer and follow the on-screen prompts:
+---
 
-```bash
-# Example installation command
-setup.exe /install /config=config.xml
-```
+## Pre-Installation Notes
 
-### 3. Configure Database Connection
+Before starting the installation:
 
-During installation, you'll be prompted to configure your database connection:
+- Ensure the **installer package** and **license key** have been provided by Nexas America
+- Verify that the SQL Server instance is installed, running, and accessible
+- Confirm that the target machine has **administrator privileges**
 
-- **Host**: Your PostgreSQL server address
-- **Port**: Default 5432
-- **Database Name**: auditmate_production
-- **Credentials**: Database username and password
-
-### 4. Set Up Admin Account
-
-Create your first administrator account with:
-
-- Username
-- Password
-- Email address
-
-### 5. Verify Installation
-
-After installation completes, verify by accessing:
-
-```
-http://localhost:3003/login
-```
-
-Default credentials:
-- **Username**: AuditmateAdmin
-- **Password**: Testingpw24#
-
-> **Security Note**: Change the default password immediately after first login.
-
-## Post-Installation
-
-After successful installation:
-
-1. Configure facility settings
-2. Add machine types
-3. Set up user accounts
-4. Configure authorization workflows
-
-## Troubleshooting
-
-### Database Connection Issues
-
-If you cannot connect to the database:
-
-1. Verify PostgreSQL service is running
-2. Check firewall settings
-3. Confirm credentials are correct
-
-### Port Conflicts
-
-If port 3003 is already in use, modify the configuration in `config.xml`.
+---
 
 ## Next Steps
 
-Explore the [Main Screen Overview](/docs/getting-started/main-screen-overview) to understand the system’s interface.
+After completing all installation steps:
+
+1. Open the application in a web browser to verify that it is accessible
+2. Log in using the default administrator credentials:
+   - **Username:** `AuditmateAdmin`
+   - **Password:** `Testingpw24#`
+3. Change the default password immediately to secure the system
+4. Proceed to the [Main Screen Overview](/docs/getting-started/main-screen-overview) to familiarize yourself with the interface
