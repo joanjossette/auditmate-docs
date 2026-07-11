@@ -65,13 +65,13 @@ The **File Compare Settings** define how the system handles file comparison, ema
 | **Email SSL Setting**                           | Select whether your email server uses SSL. Applied when sending file comparison reports to users.                |
 | **Program Modification (FANUC) Scanning Timer** | Time interval for scanning compatible FANUC CNC controls for program changes (if enabled for your installation). |
 
-## ![File Compare Settings](../../../../images/file-compare-settings.png)
+![File Compare Settings](../../../../images/file-compare-settings.png)
 
 ## 8. Complete the Installation
 
 Click **Next** to proceed and complete the installation.
 
-## ![Installation Completed](../../../../images/installation-completed.png)
+![Installation Completed](../../../../images/installation-completed.png)
 
 ## Next Steps
 
