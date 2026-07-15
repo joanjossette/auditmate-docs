@@ -12,7 +12,7 @@ docs.html             Doc viewer — reads ?doc=<path>.md from the URL
 css/styles.css         Custom styles layered on Tailwind utilities
 js/
   config.js            Path helpers (doc route <-> file <-> viewer URL)
-  docs-structure.js     Ported sidebar tree + topic cards (was shared/docs-structure.ts)
+  docs-structure.js     Sidebar tree + topic cards data
   search.js             Fetches docs/searchIndex.json, renders a search box
   main.js                Wires up index.html
   docs.js                 Wires up docs.html: fetch, frontmatter parse, marked render,
@@ -31,7 +31,6 @@ Markdown is loaded via `fetch()`, which browsers block on `file://` URLs, so
 you need a static file server — no Node/build tooling required:
 
 ```bash
-cd auditmate-kb
 python3 -m http.server 8080
 # or: npx serve .
 ```
@@ -76,24 +75,36 @@ site works from a domain root or a sub-path without any config.
 
 To add a new doc: drop the `.md` file under `docs/`, add an entry to
 `docsStructure` in `js/docs-structure.js` if it should appear in the sidebar,
-and add it to `docs/searchIndex.json` if it should be searchable (title,
-description, path in `/docs/...` form, and plain-text content).
+then regenerate the search index (see below).
+
+## Regenerating the search index
+
+`docs/searchIndex.json` is a prebuilt file, not generated on the fly. After
+adding, removing, or editing a doc's title/description/content, rebuild it:
+
+```bash
+node scripts/build-search-index.mjs
+```
+
+Zero npm dependencies — it's plain Node built-ins, so no `npm install` needed.
+It walks every `.md` file under `docs/`, and also manually includes the
+Pricing page (`pricing.html` isn't a markdown doc, so it can't be discovered
+by the script).
 
 ## Deployment
 
 It's a static site — any static host works.
 
 **GitHub Pages**
-- Push the contents of `auditmate-kb/` to a repo (or a `docs/`-named folder /
-  `gh-pages` branch, per GitHub Pages settings).
+- Push this repo as-is (or a `docs/`-named folder / `gh-pages` branch, per
+  GitHub Pages settings).
 - Enable Pages in repo Settings → Pages, pointing at that branch/folder.
 - Because all paths are relative, this works fine even at
   `username.github.io/repo-name/`.
 
 **Netlify**
-- Drag-and-drop the `auditmate-kb/` folder into Netlify's dashboard, or connect
-  the repo with build command `(none)` and publish directory `auditmate-kb`.
+- Drag-and-drop this repo's folder into Netlify's dashboard, or connect the
+  repo with build command `(none)` and publish directory `.` (repo root).
 
-No environment variables, no server, no database — the old `server/`,
-`shared/schema.ts`, and Drizzle/Postgres setup are not needed by this site at
-all since there's no auth or forms.
+No environment variables, no server, no database, no build step — this repo
+is nothing but the static site itself.
