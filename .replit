@@ -1,7 +1,0 @@
-run = "npm run build && npm start"
-
-[env]
-NODE_ENV = "production"
-
-[interpreter]
-command = ["node"]
