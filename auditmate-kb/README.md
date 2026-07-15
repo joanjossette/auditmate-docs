@@ -31,7 +31,7 @@ Markdown is loaded via `fetch()`, which browsers block on `file://` URLs, so
 you need a static file server — no Node/build tooling required:
 
 ```bash
-cd vanilla-kb
+cd auditmate-kb
 python3 -m http.server 8080
 # or: npx serve .
 ```
@@ -66,14 +66,14 @@ content (it would 404 there too) — carried over as-is rather than silently
 It's a static site — any static host works.
 
 **GitHub Pages**
-- Push the contents of `vanilla-kb/` to a repo (or a `docs/`-named folder /
+- Push the contents of `auditmate-kb/` to a repo (or a `docs/`-named folder /
   `gh-pages` branch, per GitHub Pages settings).
 - Enable Pages in repo Settings → Pages, pointing at that branch/folder.
 - Because all paths are relative, this works fine even at
   `username.github.io/repo-name/`.
 
 **Netlify**
-- Drag-and-drop the `vanilla-kb/` folder into Netlify's dashboard, or connect
+- Drag-and-drop the `auditmate-kb/` folder into Netlify's dashboard, or connect
   the repo with build command `(none)` and publish directory `vanilla-kb`.
 
 No environment variables, no server, no database — the old `server/`,
