@@ -38,6 +38,33 @@ python3 -m http.server 8080
 
 Then open `http://localhost:8080/`.
 
+### Port already in use?
+
+If you see `OSError: [Errno 48] Address already in use`, something is already
+listening on that port (often a server you started in a previous session and
+forgot to stop).
+
+Check what's holding it:
+
+```bash
+lsof -nP -iTCP:8080 -sTCP:LISTEN
+```
+
+That prints the process ID (`PID`) in the second column. Stop it, then retry:
+
+```bash
+kill <PID>
+python3 -m http.server 8080
+```
+
+Or just skip the conflict entirely by picking a different port:
+
+```bash
+python3 -m http.server 8081
+```
+
+(and open `http://localhost:8081/` instead).
+
 ## How doc links work
 
 There's no SPA router. `docs.html?doc=getting-started/installation.md` loads
@@ -52,15 +79,6 @@ To add a new doc: drop the `.md` file under `docs/`, add an entry to
 and add it to `docs/searchIndex.json` if it should be searchable (title,
 description, path in `/docs/...` form, and plain-text content).
 
-## Known pre-existing content issue
-
-`docs/getting-started/installation.md` links to
-`/docs/getting-started/installation/iis-app-pool-site-configuration`, but the
-actual file is `iis-application-pool-and-site-configuration.md` (matching the
-sidebar). This mismatch was already present in the original React app's
-content (it would 404 there too) — carried over as-is rather than silently
-"fixed" during migration. Worth a one-line edit in the source markdown.
-
 ## Deployment
 
 It's a static site — any static host works.
@@ -74,7 +92,7 @@ It's a static site — any static host works.
 
 **Netlify**
 - Drag-and-drop the `auditmate-kb/` folder into Netlify's dashboard, or connect
-  the repo with build command `(none)` and publish directory `vanilla-kb`.
+  the repo with build command `(none)` and publish directory `auditmate-kb`.
 
 No environment variables, no server, no database — the old `server/`,
 `shared/schema.ts`, and Drizzle/Postgres setup are not needed by this site at
