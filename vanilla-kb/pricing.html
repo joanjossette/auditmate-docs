@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Licensing Plans — AuditMate MFG</title>
+  <link rel="icon" href="favicon.png" />
+  <script>
+    if (localStorage.getItem("theme") === "dark" ||
+        (!localStorage.getItem("theme") && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+      document.documentElement.classList.add("dark");
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind-config.js"></script>
+  <script src="https://unpkg.com/lucide@0.453.0/dist/umd/lucide.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="flex flex-col min-h-screen font-sans">
+  <div id="navbar"></div>
+
+  <main class="flex-1 w-full">
+    <section class="py-20 bg-muted/30">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h1 class="text-4xl font-bold mb-4">Licensing Plans</h1>
+        <p class="text-lg text-muted-foreground mb-12">
+          Choose the plan that best supports your machine and operational needs.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="pricing-cards"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script type="module" src="js/pricing.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documentation — AuditMate MFG</title>
+  <link rel="icon" href="favicon.png" />
+  <script>
+    if (localStorage.getItem("theme") === "dark" ||
+        (!localStorage.getItem("theme") && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+      document.documentElement.classList.add("dark");
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind-config.js"></script>
+  <script src="https://unpkg.com/lucide@0.453.0/dist/umd/lucide.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="flex flex-col min-h-screen font-sans">
+  <div id="navbar"></div>
+
+  <div class="flex flex-1 max-w-6xl w-full mx-auto">
+    <!-- Mobile sidebar overlay -->
+    <div id="sidebar-overlay" class="fixed inset-0 z-30 bg-black/50 lg:hidden" hidden></div>
+
+    <!-- Sidebar -->
+    <aside id="sidebar-panel"
+      class="fixed lg:sticky top-[65px] left-0 z-40 h-[calc(100vh-65px)] w-72 shrink-0 border-r border-border bg-background overflow-y-auto p-6 -translate-x-full lg:translate-x-0 transition-transform">
+      <div id="sidebar"></div>
+    </aside>
+
+    <!-- Main content -->
+    <div class="flex-1 w-full min-w-0 px-6 py-8">
+      <button id="sidebar-toggle" type="button"
+        class="lg:hidden mb-4 p-2 rounded-md border border-border hover-elevate" aria-label="Toggle sidebar">
+        <i data-lucide="menu" class="h-5 w-5"></i>
+      </button>
+
+      <div class="mb-6 max-w-xl" id="doc-search"></div>
+
+      <nav id="breadcrumbs" class="flex flex-wrap items-center gap-2 text-sm mb-6 text-muted-foreground"></nav>
+
+      <article id="doc-content" class="doc-content"></article>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+  <script type="module" src="js/docs.js"></script>
+</body>
+</html>
