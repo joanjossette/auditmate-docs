@@ -20,7 +20,7 @@ Follow the steps below in sequence to ensure a successful installation:
 4. [Firewall Setup](/docs/getting-started/installation/firewall-setup)  
    Configure firewall rules to allow required inbound and outbound connections.
 
-5. [IIS Application Pool and Site Configuration](/docs/getting-started/installation/iis-app-pool-site-configuration)  
+5. [IIS Application Pool and Site Configuration](/docs/getting-started/installation/iis-application-pool-and-site-configuration)  
    Set up the application pool and configure the IIS site for optimal performance and stability.
 
 6. [Power Plan Configuration](/docs/getting-started/installation/power-plan-configuration)  

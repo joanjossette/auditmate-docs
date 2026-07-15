@@ -79,6 +79,7 @@ export const docsStructure: DocItem[] = [
         ],
       },
       { title: "Main Screen Overview", path: "/docs/getting-started/main-screen-overview" },
+      { title: "Quick Start", path: "/docs/getting-started/quick-start" },
       { title: "Settings Configuration", path: "/docs/getting-started/settings-config" },
       { title: "Manage Facilities", path: "/docs/getting-started/manage-facilities" },
       { title: "Manage User Roles", path: "/docs/getting-started/user-roles" },
