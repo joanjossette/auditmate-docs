@@ -1,46 +1,42 @@
 import { docPathToUrl } from "./config.js";
 
-let indexPromise = null;
+let fusePromise = null;
 
-function loadIndex() {
-  if (!indexPromise) {
-    indexPromise = fetch("docs/searchIndex.json")
+// Same Fuse.js version and config as the React app's SearchBar.tsx, so
+// ranking behavior matches instead of approximating it with ad-hoc scoring.
+function loadFuse() {
+  if (!fusePromise) {
+    fusePromise = fetch("docs/searchIndex.json")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to load search index");
         return res.json();
       })
+      .then(
+        (docs) =>
+          new Fuse(docs, {
+            keys: [
+              { name: "title", weight: 2 },
+              { name: "description", weight: 1.5 },
+              { name: "content", weight: 1 },
+            ],
+            threshold: 0.3,
+            includeScore: true,
+            minMatchCharLength: 2,
+            isCaseSensitive: false,
+          })
+      )
       .catch((err) => {
         console.error(err);
-        return [];
+        return null;
       });
   }
-  return indexPromise;
-}
-
-function scoreDoc(doc, terms) {
-  const title = (doc.title || "").toLowerCase();
-  const description = (doc.description || "").toLowerCase();
-  const content = (doc.content || "").toLowerCase();
-  let score = 0;
-  for (const term of terms) {
-    if (title.includes(term)) score += 3;
-    if (description.includes(term)) score += 2;
-    if (content.includes(term)) score += 1;
-  }
-  return score;
+  return fusePromise;
 }
 
 async function search(query) {
-  const docs = await loadIndex();
-  const terms = query.toLowerCase().trim().split(/\s+/).filter((t) => t.length >= 2);
-  if (terms.length === 0) return [];
-
-  return docs
-    .map((doc) => ({ doc, score: scoreDoc(doc, terms) }))
-    .filter(({ score }) => score > 0)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 8)
-    .map(({ doc }) => doc);
+  const fuse = await loadFuse();
+  if (!fuse || !query.trim()) return [];
+  return fuse.search(query).map((result) => result.item);
 }
 
 /**
@@ -79,7 +75,7 @@ export function renderSearchBar(container, { placeholder = "Search help articles
             <i data-lucide="file-text" class="h-5 w-5 text-primary shrink-0 mt-0.5"></i>
             <span class="flex-1 min-w-0">
               <span class="block font-medium text-sm">${doc.title}</span>
-              ${doc.description ? `<span class="block text-xs text-muted-foreground truncate">${doc.description}</span>` : ""}
+              ${doc.description ? `<span class="block text-xs text-muted-foreground line-clamp-2">${doc.description}</span>` : ""}
             </span>
           </a>`
         )
