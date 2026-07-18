@@ -12,17 +12,17 @@ Deploy **AuditMateMFG™ Revision Manager** by running the Deployment Manager an
 
 Contact **Nexas America** to receive your installation package and license key.
 
-## 2. Extract the Installer Package
+<h2 style="border-top: none; padding-top: 0;">2. Extract the Installer Package</h2>
 
 Extract the **AuditMateMFG™ Installer Package** to a known directory on the host server.
 
-## 3. Run the Installer as Administrator
+<h2 style="border-top: none; padding-top: 0;">3. Run the Installer as Administrator</h2>
 
 1. Navigate to the extracted directory
 2. Right-click **Setup.exe** or **AuditMateMFGDeploymentManager.msi**
 3. Select **Run as administrator**
 
-## 4. Configure Website Settings
+<h2 style="border-top: none; padding-top: 0;">4. Configure Website Settings</h2>
 
 On the **Website Configuration** screen:
 
@@ -32,7 +32,7 @@ On the **Website Configuration** screen:
 
 ![Website Configuration](../../../../images/website-configuration.png)
 
-## 5. Configure Database Connection
+<h2 style="border-top: none; padding-top: 0;">5. Configure Database Connection</h2>
 
 On the **Database Configuration** screen, enter the SQL Server details from the previous setup steps:
 
@@ -46,7 +46,7 @@ On the **Database Configuration** screen, enter the SQL Server details from the 
 
 ![Database Configuration](../../../../images/database-configuration.png)
 
-## 6. Configure LDAP Settings (Optional)
+<h2 style="border-top: none; padding-top: 0;">6. Configure LDAP Settings (Optional)</h2>
 
 LDAP settings enable connection to a directory service (e.g., Active Directory) for centralized authentication. These settings are optional and depend on your environment.
 
@@ -55,7 +55,7 @@ LDAP settings enable connection to a directory service (e.g., Active Directory) 
 
 ![LDAP Settings](../../../../images/ldap-settings.png)
 
-## 7. Configure File Compare Settings
+<h2 style="border-top: none; padding-top: 0;">7. Configure File Compare Settings</h2>
 
 The **File Compare Settings** define how the system handles file comparison, email security, and program scanning. Most installations can use the default values.
 
@@ -67,7 +67,7 @@ The **File Compare Settings** define how the system handles file comparison, ema
 
 ![File Compare Settings](../../../../images/file-compare-settings.png)
 
-## 8. Complete the Installation
+<h2 style="border-top: none; padding-top: 0;">8. Complete the Installation</h2>
 
 Click **Next** to proceed and complete the installation.
 

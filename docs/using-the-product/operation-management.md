@@ -14,9 +14,18 @@ Operations in AuditMate represent specific manufacturing activities performed on
 ---
 ## Create an Operation
 
-|  |  |
-|---|---|
-| - Select a **Part** from the list. <br> - Click **+ Create** in the Left Panel. <br> - Fill in the required details in the **Create Operation** form. <br> - Click **Save** to add the operation to the system. <br><br> Once created, the operation will appear in the **Operations** list for the selected part. | ![Create Operation Form](./images/create-operation-form.png "width=400") |
+<div class="doc-flex-row">
+<div>
+
+1\. Select a **Part** from the list. <br> 2. Click **+ Create** in the Left Panel. <br> 3. Fill in the required details in the **Create Operation** form. <br> 4. Click **Save** to add the operation to the system. <br><br> Once created, the operation will appear in the **Operations** list for the selected part.
+
+</div>
+<div>
+
+![Create Operation Form](./images/create-operation-form.png "width=400")
+
+</div>
+</div>
 
 
 ⚠️ **Note:** Parts can have multiple operations to represent multi-step manufacturing processes.

@@ -9,9 +9,18 @@ category: Machines
 The **Machine Configuration** is defined within the **Create Machine** form.  
 These settings determine how each CNC machine communicates with AuditMate, handles CNC program transfers, and scans for modifications.
 
-|  |  |
-|---|---|
-| **Create Machine Form (Single-Head)**![Create Machine - Single Head](./images/create-machine-single-head.png "width=400") | **Create Machine Form (Multi-Head)**![Create Machine - Multi Head](./images/create-machine-multi-head.png "width=400") |
+<div class="doc-flex-row">
+<div>
+
+**Create Machine Form (Single-Head)**![Create Machine - Single Head](./images/create-machine-single-head.png "width=400")
+
+</div>
+<div>
+
+**Create Machine Form (Multi-Head)**![Create Machine - Multi Head](./images/create-machine-multi-head.png "width=400")
+
+</div>
+</div>
 
 
 ## Configuration Details

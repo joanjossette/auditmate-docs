@@ -13,10 +13,10 @@ Deploy authorized CNC programs to production machines.
 Before sending CNC programs to a machine, they must be **tested** and correctly **tagged** in the system.
 
 To update the program’s download status:
-- Click the **Untested** status.
-- The **Authorize Download Status Change** form will open.
-- Toggle the status to **Authorize**.
-- Click **Save**.
+1. Click the **Untested** status.
+2. The **Authorize Download Status Change** form will open.
+3. Toggle the status to **Authorize**.
+4. Click **Save**.
 
 Once updated to **Tested**, the program becomes eligible for **Sending to Machine**.
 
@@ -24,9 +24,18 @@ Once updated to **Tested**, the program becomes eligible for **Sending to Machin
 
 ## Send to Machine
 
-|  |  |
-|---|---|
-| - Click the **Send** button for the corresponding machine and head. <br> - The **Send to Machine** form will open. <br> - Select the programs you want to send by checking the boxes next to each program. <br> - Click **Send to Machine** to begin the transfer. <br><br> The system will process the request and handle delivery based on the configured communication method for that machine. | ![Send to Machine](./images/send-to-machine.png "width=400") |
+<div class="doc-flex-row">
+<div>
+
+1\. Click the **Send** button for the corresponding machine and head. <br> 2. The **Send to Machine** form will open. <br> 3. Select the programs you want to send by checking the boxes next to each program. <br> 4. Click **Send to Machine** to begin the transfer. <br><br> The system will process the request and handle delivery based on the configured communication method for that machine.
+
+</div>
+<div>
+
+![Send to Machine](./images/send-to-machine.png "width=400")
+
+</div>
+</div>
 
 
 ---

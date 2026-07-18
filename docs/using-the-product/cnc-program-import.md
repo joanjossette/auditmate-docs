@@ -17,9 +17,13 @@ CNC programs are created using external CAM software (like Mastercam, Fusion 360
 
 ## Import CNC Programs
 
-|  |
-|---|
-| - With a machine associated to your operation, click **CNC Programs** from the menu. <br> - For multi-head machines, select the correct head number before importing. <br> - Import program files using either of the following methods: <br> &nbsp;&nbsp;&nbsp;**Drag and Drop**: Drag program files from your file explorer and drop them into either the MAIN or SUB panels. <br> &nbsp;&nbsp;&nbsp;**Browse for Files**: Click **Click to Browse**, select one or more program files, and click **Open**. <br><br> Once imported, the programs will appear in the CNC Programs list for the selected operation. | 
+<div class="doc-flex-row">
+<div>
+
+1\. With a machine associated to your operation, click **CNC Programs** from the menu. <br> 2. For multi-head machines, select the correct head number before importing. <br> 3. Import program files using either of the following methods: <br> &nbsp;&nbsp;&nbsp;**Drag and Drop**: Drag program files from your file explorer and drop them into either the MAIN or SUB panels. <br> &nbsp;&nbsp;&nbsp;**Browse for Files**: Click **Click to Browse**, select one or more program files, and click **Open**. <br><br> Once imported, the programs will appear in the CNC Programs list for the selected operation.
+
+</div>
+</div>
 
 
 ## Main vs. Sub Programs

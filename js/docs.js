@@ -147,7 +147,7 @@ async function loadDoc(file) {
   contentEl.innerHTML = `<p class="text-muted-foreground">Loading documentation…</p>`;
 
   try {
-    const res = await fetch(`docs/${file}`);
+    const res = await fetch(`docs/${file}`, { cache: "no-cache" });
     if (!res.ok) throw new Error(`File not found: docs/${file}`);
     const raw = await res.text();
     const { attributes, body } = parseFrontmatter(raw);

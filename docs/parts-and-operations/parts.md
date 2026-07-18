@@ -14,10 +14,15 @@ The Left Panel displays all existing parts created in the system.
 ## Purpose of Parts
 
 Using Parts allows you to:
+
+<div style="margin-left: 1.5rem">
+
 - Group all CNC programs related to a specific job
 - Maintain a clear and complete revision history
 - Track progress through defined workflow stages
 - Centralize approvals and audit information
+
+</div>
 
 Each Part acts as the top-level reference point for production, ensuring all associated Operations are properly controlled.
 

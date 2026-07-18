@@ -46,28 +46,25 @@ Select the appropriate setup guide based on your hosting environment:
 4. Continue to **Role Services**
 
 5. Enable the following:
-<div style="margin-left: 50px">
 
-**Common HTTP Features**
+   **Common HTTP Features**
 
-- HTTP Redirection
+   - HTTP Redirection
 
-**Security**
+   **Security**
 
-- URL Authorization
-- Windows Authentication
+   - URL Authorization
+   - Windows Authentication
 
-**Application Development**
+   **Application Development**
 
-- .NET Extensibility 4.8
-- Application Initialization
-- ASP.NET 4.8
-- ISAPI Extensions
-- ISAPI Filters
-- Server-Side Includes
-- WebSocket Protocol
-
-</div>
+   - .NET Extensibility 4.8
+   - Application Initialization
+   - ASP.NET 4.8
+   - ISAPI Extensions
+   - ISAPI Filters
+   - Server-Side Includes
+   - WebSocket Protocol
 
 6. Click **Next** until Confirmation
 7. Enable **Restart the destination server automatically if required**

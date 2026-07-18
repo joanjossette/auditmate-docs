@@ -12,14 +12,14 @@ Proper configuration of **SQL Server** is required to ensure successful installa
 
 Complete the following:
 
-- [Enable Network Protocols](/docs/getting-started/installation/sql-server-configuration/enable-network-protocols)  
-  Enable required protocols (Shared Memory, Named Pipes, TCP/IP) and verify the port number
+1. [Enable Network Protocols](/docs/getting-started/installation/sql-server-configuration/enable-network-protocols)  
+   Enable required protocols (Shared Memory, Named Pipes, TCP/IP) and verify the port number
 
-- [Configure Authentication Mode](/docs/getting-started/installation/sql-server-configuration/configure-authentication-mode)  
-  Enable Mixed Mode authentication
+2. [Configure Authentication Mode](/docs/getting-started/installation/sql-server-configuration/configure-authentication-mode)  
+   Enable Mixed Mode authentication
 
-- [Create SQL Server Login](/docs/getting-started/installation/sql-server-configuration/create-sql-login)  
-  Create a login with the `dbcreator` role
+3. [Create SQL Server Login](/docs/getting-started/installation/sql-server-configuration/create-sql-login)  
+   Create a login with the `dbcreator` role
 
 ---
 

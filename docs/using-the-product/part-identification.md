@@ -16,9 +16,18 @@ The Left Panel displays all existing parts created in the system.
 
 ## Create a New Part
 
-|  |  |
-|---|---|
-| You can create and define a new part to be manufactured within your facility. <br><br> - Click **+ Create** in the Left Panel. <br> - Fill in the required details in the **Create Part** form. <br> - Click **Save** to add the part to the system. <br><br> Once created, the part will be listed and available for further setup such as adding operations or CNC programs. | ![Create Part Form](./images/create-part-form.png "width=400") |
+<div class="doc-flex-row">
+<div>
+
+You can create and define a new part to be manufactured within your facility. <br><br> 1. Click **+ Create** in the Left Panel. <br> 2. Fill in the required details in the **Create Part** form. <br> 3. Click **Save** to add the part to the system. <br><br> Once created, the part will be listed and available for further setup such as adding operations or CNC programs.
+
+</div>
+<div>
+
+![Create Part Form](./images/create-part-form.png "width=400")
+
+</div>
+</div>
 
 ## Part Properties
 

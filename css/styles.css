@@ -172,7 +172,8 @@ a { color: inherit; }
 .doc-content hr + p:has(> a[id]:only-child) + h2 { border-top: none; padding-top: 0; margin-top: 1.25rem; }
 .doc-content h3 { font-size: 1.2rem; font-weight: 600; margin: 1.5rem 0 0.5rem; }
 .doc-content p { margin: 0.9rem 0; }
-.doc-content ul, .doc-content ol { margin: 0.9rem 0; padding-left: 1.5rem; }
+.doc-content ul { margin: 0.9rem 0; padding-left: 1.5rem; list-style-type: disc; }
+.doc-content ol { margin: 0.9rem 0; padding-left: 1.5rem; list-style-type: decimal; }
 .doc-content li { margin: 0.3rem 0; }
 .doc-content a { color: hsl(var(--primary)); text-decoration: underline; text-underline-offset: 2px; }
 .doc-content strong { font-weight: 600; }
@@ -213,6 +214,18 @@ a { color: inherit; }
 }
 .doc-content th:last-child, .doc-content td:last-child { border-right: none; }
 .doc-content th { background-color: hsl(var(--card)); font-weight: 600; }
+
+/* Some tables are used purely for 2/3-column layout (text next to an
+   image) with no real header — hide that row instead of showing a blank
+   bar, since GFM tables always require a header row in the source. */
+.doc-content thead tr:not(:has(th:not(:empty))) { display: none; }
+
+/* Non-table replacement for the same text-next-to-image layout: plain
+   columns, no border box, no divider line. */
+.doc-content .doc-flex-row { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 1.5rem; margin: 1.25rem 0; }
+.doc-content .doc-flex-row > div { flex: 1 1 260px; font-size: 0.9rem; }
+.doc-content .doc-flex-row > div > p:first-child { margin-top: 0; }
+.doc-content .doc-flex-row > div > p:last-child { margin-bottom: 0; }
 
 .doc-content .status-yes { color: #22c55e; font-weight: 600; }
 .doc-content .status-no { color: #ef4444; }

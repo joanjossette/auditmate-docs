@@ -16,9 +16,18 @@ Authorization permissions are based on:
 
 ## Authorization Process
 
-|  |  |
-|---|---|
-| - Log in using an account with authorization permissions. <br> - Navigate through: **Part → Operation → Machine Type → CNC Programs**. <br> - Review the program details, including version, revision, and any alerts. <br> - Click the **Authorization** icon in the right-most column. <br> - In the **Authorize Program Status Change** form, toggle to **Authorize**, and click **Save**. | ![Authorize Program](./images/authorize-program.png "width=400") |
+<div class="doc-flex-row">
+<div>
+
+1\. Log in using an account with authorization permissions. <br> 2. Navigate through: **Part → Operation → Machine Type → CNC Programs**. <br> 3. Review the program details, including version, revision, and any alerts. <br> 4. Click the **Authorization** icon in the right-most column. <br> 5. In the **Authorize Program Status Change** form, toggle to **Authorize**, and click **Save**.
+
+</div>
+<div>
+
+![Authorize Program](./images/authorize-program.png "width=400")
+
+</div>
+</div>
 
 ### Authorization States
 
