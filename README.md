@@ -106,5 +106,22 @@ It's a static site — any static host works.
 - Drag-and-drop this repo's folder into Netlify's dashboard, or connect the
   repo with build command `(none)` and publish directory `.` (repo root).
 
+**IIS (Windows)**
+- Copy the whole repo folder to the server (everything except `.git/`,
+  `.claude/`, and `scripts/` — those aren't needed at runtime, but leaving
+  them is harmless too).
+- In IIS Manager, point a site (or an application under an existing site) at
+  that folder. `index.html` is picked up automatically as the default
+  document.
+- The included `web.config` adds the `.md` MIME type mapping IIS is missing
+  by default — without it, every doc page 404s, since `js/docs.js` fetches
+  the raw `.md` files directly in the browser. No other IIS configuration
+  (URL Rewrite, app pool settings, etc.) is required — this is a pure static
+  site, one query-string parameter (`docs.html?doc=...`) is all the
+  "routing" there is.
+- To update the site later, just re-copy the changed files over the old
+  ones (or replace the whole folder) — nothing needs to be rebuilt or
+  reinstalled.
+
 No environment variables, no server, no database, no build step — this repo
 is nothing but the static site itself.
