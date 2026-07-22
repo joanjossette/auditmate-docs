@@ -6,7 +6,7 @@ category: Using the Product
 
 # Using the Product
 
-Learn how to use AuditMate MFG Revision Manager for managing your CNC programs through the complete lifecycle.
+Learn how to use AuditMate MFG Revision Manager for managing your machine programs through the complete lifecycle.
 
 
 ## Workflow Steps
@@ -18,7 +18,7 @@ The Workflow Steps outline the structured process AuditMate uses to move a part 
 | **Part Identification** | Define the physical component to be manufactured. |
 | **Operation Creation** | Set up manufacturing operations for the identified part. |
 | **Machine Association** | Link each operation to the appropriate machines. |
-| **Program Import** | Import CNC programs associated with each operation. |
+| **Program Import** | Import machine programs associated with each operation. |
 | **Authorization** | Approve the part and operations for production to ensure quality control. |
 | **Deployment** | Send the approved operations and programs to the machines for execution. |
 

@@ -44,5 +44,4 @@ Configure the IIS application pools and sites created by the Deployment Manager 
 
 ## Next Steps
 
-After completing IIS configuration, the **AuditMateMFG™** installation is complete. Proceed to [Quick Start](/docs/getting-started/quick-start) to log in and verify the application.
 After IIS configuration is complete, proceed to [Power Plan Configuration](/docs/getting-started/installation/power-plan-configuration) to ensure continuous 24/7 system availability.

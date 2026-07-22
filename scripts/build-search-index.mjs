@@ -8,27 +8,12 @@
 import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
+import { parseFrontmatter } from "../js/frontmatter.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const DOCS_DIR = path.join(ROOT, "docs");
 const OUTPUT_FILE = path.join(DOCS_DIR, "searchIndex.json");
-
-// Minimal flat "key: value" frontmatter parser — same approach as
-// components/../js/docs.js's parseFrontmatter, kept in sync intentionally.
-function parseFrontmatter(raw) {
-  const match = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?/.exec(raw);
-  if (!match) return { attributes: {}, body: raw };
-  const attributes = {};
-  match[1].split("\n").forEach((line) => {
-    const idx = line.indexOf(":");
-    if (idx === -1) return;
-    const key = line.slice(0, idx).trim();
-    const value = line.slice(idx + 1).trim().replace(/^["']|["']$/g, "");
-    attributes[key] = value;
-  });
-  return { attributes, body: raw.slice(match[0].length) };
-}
 
 function stripMarkdown(md) {
   return md

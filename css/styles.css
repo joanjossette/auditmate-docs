@@ -10,6 +10,7 @@
   --background: 210 4% 98%;
   --foreground: 210 6% 12%;
   --border: 210 4% 88%;
+  --input: 210 4% 88%;
   --card: 210 4% 96%;
   --card-foreground: 210 6% 14%;
   --card-border: 210 4% 92%;
@@ -45,6 +46,7 @@ html.dark {
   --background: 210 5% 8%;
   --foreground: 210 4% 92%;
   --border: 210 5% 18%;
+  --input: 210 5% 18%;
   --card: 210 5% 10%;
   --card-foreground: 210 4% 90%;
   --card-border: 210 5% 14%;
@@ -241,6 +243,16 @@ a { color: inherit; }
 .doc-content img.zoomable { cursor: zoom-in; transition: transform 0.2s ease; }
 .doc-content img.zoomable:hover { transform: scale(1.03); }
 
+.doc-content img.icon-inline {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  vertical-align: middle;
+}
+
 /* Lightbox for zoomable images */
 .lightbox-overlay {
   position: fixed;
@@ -286,4 +298,8 @@ a { color: inherit; }
   cursor: pointer;
   color: inherit;
   text-decoration: none;
+}
+.search-result-item.is-active {
+  background-color: hsl(var(--accent));
+  color: hsl(var(--accent-foreground));
 }

@@ -22,7 +22,7 @@ const licenseCards = [
     licenseType: "Per machine, must match Base License machine count",
     features: [
       "All Base License features",
-      "Incoming File Manager for controlled review of CNC programs",
+      "Incoming File Manager for controlled review of machine programs",
       "Email support for Operations and Server Setup",
       "Includes Examdiff License (for fast revision comparisons)",
     ],

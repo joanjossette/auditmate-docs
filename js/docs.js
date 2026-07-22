@@ -3,6 +3,7 @@ import { renderFooter } from "../components/footer.js";
 import { renderSidebar } from "../components/sidebar.js";
 import { renderSearchBar } from "./search.js";
 import { docPathToUrl } from "./config.js";
+import { parseFrontmatter } from "./frontmatter.js";
 
 renderNavbar(document.getElementById("navbar"));
 renderFooter(document.getElementById("footer"));
@@ -41,22 +42,6 @@ function currentDocFile() {
   // Guard against path traversal / absolute paths in the query param.
   file = file.replace(/^\/+/, "").replace(/\.\.(\/|$)/g, "");
   return file;
-}
-
-// --- Minimal frontmatter parser (flat "key: value" pairs only, which is
-// all these docs use — no need for a full YAML parser). ---
-function parseFrontmatter(raw) {
-  const match = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?/.exec(raw);
-  if (!match) return { attributes: {}, body: raw };
-  const attributes = {};
-  match[1].split("\n").forEach((line) => {
-    const idx = line.indexOf(":");
-    if (idx === -1) return;
-    const key = line.slice(0, idx).trim();
-    const value = line.slice(idx + 1).trim().replace(/^["']|["']$/g, "");
-    attributes[key] = value;
-  });
-  return { attributes, body: raw.slice(match[0].length) };
 }
 
 function titleCaseSegment(segment) {
@@ -125,6 +110,7 @@ function postProcessContent(container) {
     if (src.startsWith("./images/") || src.startsWith("../images/")) {
       img.setAttribute("src", src.replace(/^(\.\.\/|\.\/)/, ""));
     }
+    img.setAttribute("loading", "lazy");
 
     const title = img.getAttribute("title") || "";
     const widthMatch = title.match(/width=(\d+)/);
@@ -153,7 +139,7 @@ async function loadDoc(file) {
     const { attributes, body } = parseFrontmatter(raw);
 
     document.title = `${attributes.title || "Documentation"} — AuditMate MFG`;
-    contentEl.innerHTML = marked.parse(body);
+    contentEl.innerHTML = DOMPurify.sanitize(marked.parse(body));
     postProcessContent(contentEl);
     renderBreadcrumbs(breadcrumbsEl, file);
   } catch (err) {

@@ -16,7 +16,7 @@ category: Archive
 <div class="doc-flex-row">
 <div>
 
-The **Revisit** page allows users to view a part and its details as they were before being archived. This helps verify historical information, review previous configurations, and reference the part’s state prior to archival. <br><br> The page displays: <br> - Part information (Part ID, Name, Status) <br> - Linked operations or steps <br> - Associated Machine - Uploaded documents <br> - CNC Programs - Others
+The **Revisit** page allows users to view a part and its details as they were before being archived. This helps verify historical information, review previous configurations, and reference the part’s state prior to archival. <br><br> The page displays: <br> - Part information (Part ID, Name, Status) <br> - Linked operations or steps <br> - Associated Machine - Uploaded documents <br> - Machine Programs - Others
 
 </div>
 </div>

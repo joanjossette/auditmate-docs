@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#7ECEFF"/>
+    <stop offset="1" stop-color="#2F72B8"/>
+  </linearGradient></defs>
+  <polyline points="17.73,16.52 16.57,17.80 15.12,18.76 13.49,19.34 11.76,19.50 10.04,19.22 8.45,18.53 7.07,17.47 6.00,16.11 5.30,14.52 5.01,12.81 5.15,11.07 5.71,9.43 6.66,7.98 7.94,6.80 9.46,5.98 11.15,5.55 12.88,5.56 14.57,5.99 16.09,6.82 17.36,8.00" stroke="url(#g)"/>
+  <polygon points="17.36,8.00 14.34,6.96 18.74,5.11" fill="#2F72B8" stroke="none"/>
+</svg>

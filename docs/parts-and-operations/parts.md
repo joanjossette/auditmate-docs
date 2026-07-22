@@ -1,11 +1,11 @@
 ---
 title: Parts
-description: Learn how Parts are used to organize CNC programs and production workflows.
+description: Learn how Parts are used to organize machine programs and production workflows.
 ---
 
 # Parts
 
-A **Part** represents the manufactured item, job, or work order being produced. It serves as the primary container for all related CNC programs, revisions, and production records.
+A **Part** represents the manufactured item, job, or work order being produced. It serves as the primary container for all related machine programs, revisions, and production records.
 
 ![Parts Page](./images/parts-page.png "width=800 nozoom")  
 **Access:** Top Menu → **Parts and Operations**, Left Menu → **Parts**. <br>
@@ -17,7 +17,7 @@ Using Parts allows you to:
 
 <div style="margin-left: 1.5rem">
 
-- Group all CNC programs related to a specific job
+- Group all machine programs related to a specific job
 - Maintain a clear and complete revision history
 - Track progress through defined workflow stages
 - Centralize approvals and audit information
@@ -30,4 +30,4 @@ Each Part acts as the top-level reference point for production, ensuring all ass
 
 Parts move through structured workflow stages to ensure programs are reviewed and authorized before production use. Status changes at the Part level provide visibility into overall readiness for manufacturing.
 
-A Part may contain one or more Operations, each with its own CNC program and revision history.
+A Part may contain one or more Operations, each with its own machine program and revision history.

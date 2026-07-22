@@ -17,7 +17,7 @@ Link operations to the machines that will execute them.
 <div class="doc-flex-row">
 <div>
 
-\- In the **Machine Types** list, check the box next to the machines you want to associate with the operation. <br><br> Once saved, the selected machines will be linked to the operation and can be used for CNC program setup.
+\- In the **Machine Types** list, check the box next to the machines you want to associate with the operation. <br><br> Once saved, the selected machines will be linked to the operation and can be used for machine program setup.
 
 </div>
 </div>
@@ -41,4 +41,4 @@ Link operations to the machines that will execute them.
 
 ## Next Step
 
-After associating machines with your operation, proceed to [Import CNC Programs](/docs/using-the-product/cnc-program-import) to link the necessary programs for manufacturing.
+After associating machines with your operation, proceed to [Import Machine Programs](/docs/using-the-product/machine-program-import) to link the necessary programs for manufacturing.

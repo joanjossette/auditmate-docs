@@ -7,7 +7,7 @@ category: Machines
 # Machine Configuration
 
 The **Machine Configuration** is defined within the **Create Machine** form.  
-These settings determine how each CNC machine communicates with AuditMate, handles CNC program transfers, and scans for modifications.
+These settings determine how each CNC machine communicates with AuditMate, handles machine program transfers, and scans for modifications.
 
 <div class="doc-flex-row">
 <div>
@@ -29,11 +29,11 @@ These settings determine how each CNC machine communicates with AuditMate, handl
 |----------------------|-----------------|
 | **Machine Name** | Unique name that identifies the machine within the system. |
 | **Machine Description** | Short description of the machine (e.g., model or purpose). |
-| **DNC Settings** | Defines how AuditMate communicates with the machine for sending CNC programs. |
+| **DNC Settings** | Defines how AuditMate communicates with the machine for sending machine programs. |
 | → **Workplace ID** | Specifies the workstation or network identifier associated with the machine. |
-| → **DNC Type** | Determines the communication method for program transfer. <br>**Options:** <ul><li>**Send SMB** – Transfers via shared folder (SMB protocol).</li><li>**Send** – Sends programs through direct path.</li><li>**Send SMB to Active Programs Folder** – Sends to designated shared folder for active programs.</li></ul> |
-| **Program Modifications Scanning** | Enables automatic detection of CNC program changes. |
-| → **Scanned Folder** | Folder monitored for new or modified CNC programs. |
+| → **DNC Type** | Determines the communication method for program transfer. <br>**Options:** <ul><li>**Send SMB** – Transfers via shared folder (SMB protocol).</li><li>**Send** – Sends programs through direct path.</li><li>**Send SMB to Active Programs Folder** – Sends to designated shared folder for active programs.</li><li>**Place in Temp DNC Folder** – Places the program in a temporary DNC folder for pickup by the machine.</li><li>**TCP String** – Sends the program as a TCP string over a direct network connection.</li></ul> |
+| **Program Modifications Scanning** | Enables automatic detection of machine program changes. |
+| → **Scanned Folder** | Folder monitored for new or modified machine programs. |
 | → **DNC Incoming Folder** | Directory where scanned or updated programs are received and stored. |
 | **FOCAS Machine Settings** | Applies when the machine uses **FOCAS (Fanuc Open CNC API)** for communication. |
 | → **Fanuc CNC Address** | IP address of the Fanuc CNC controller. |

@@ -39,10 +39,25 @@ Displayed on the Left Panel and becomes available when an operation is selected.
 |--------|-------------|
 | **Rev** | Update the operation’s revision number to track process or setup changes. |
 | **Edit** | Modify existing operation details. |
-| **Copy** | Duplicate an operation within the same part, including its associated machines and CNC programs, for quicker setup. |
+| **Copy** | Duplicate an operation within the same part, including its associated machines and machine programs, for quicker setup. |
 | **Archive** | Move an operation to the archive when it’s no longer active but needs to be retained for reference. |
 | **Hold** | Temporarily suspend an operation to prevent it from being used or processed until further notice. |
 | **Release** | Available when an operation is on hold; releases the operation from hold status, making it active again. |
+---
+
+## Center Panel Actions
+
+When an operation is selected, the Center Panel displays additional buttons for working with the operation.
+
+![Operation Center Panel](./images/operations-center-panel.png "width=800 nozoom")
+
+| Button | Description |
+|--------|-------------|
+| **Documents** | Attach reference files, drawings, or specifications to the operation. The badge shows how many documents are currently attached. |
+| **Add a Note** | Add a note to the operation for context, reminders, or communication with other users. |
+| **History** | View the history log of changes and actions performed on the operation. |
+| **Email Notifications** | Appears once the operation has been associated with a machine and a machine program has been uploaded. Opens a form listing users with the **Receive Email Notification** permission — selected users are notified of incoming and active-monitoring program modifications. |
+
 ---
 
 ## Next Step

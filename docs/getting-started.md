@@ -9,7 +9,7 @@ Welcome to the AuditMateMFG™ Revision Manager documentation. This guide will h
 
 ## Introduction
 
-AuditMateMFG™ Revision Manager is designed to manage, control, and track revisions of manufacturing data, including CNC programs, parts, and operations. It helps ensure that only the latest approved versions are used in production, improving traceability, and overall operational efficiency.
+AuditMateMFG™ Revision Manager is designed to manage, control, and track revisions of manufacturing data, including machine programs, parts, and operations. It helps ensure that only the latest approved versions are used in production, improving traceability, and overall operational efficiency.
 
 The system provides centralized control, user access management, and workflow-based authorization processes to support structured and secure manufacturing operations.
 

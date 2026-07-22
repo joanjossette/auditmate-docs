@@ -64,9 +64,9 @@ export const docsStructure = [
       { title: "Part Identification", path: "/docs/using-the-product/part-identification" },
       { title: "Operation Management", path: "/docs/using-the-product/operation-management" },
       { title: "Machine Association", path: "/docs/using-the-product/machine-association" },
-      { title: "CNC Program Import", path: "/docs/using-the-product/cnc-program-import" },
+      { title: "Machine Program Import", path: "/docs/using-the-product/machine-program-import" },
       { title: "Authorization Process", path: "/docs/using-the-product/authorization-process" },
-      { title: "Sending to Machine", path: "/docs/using-the-product/sending-to-machine" },
+      { title: "Machine Release", path: "/docs/using-the-product/machine-release" },
     ],
   },
   {
